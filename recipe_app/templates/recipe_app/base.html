@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Recipe Sharing Platform{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}"></head>
+<body>
+    <!-- Main Navigation -->
+    <nav>
+        <div class="nav-wrapper">
+            <a href="{% url 'home' %}" class="brand-logo">RecipeShare</a>
+            <ul id="nav-mobile" class="right">
+                <!-- Authentication Links -->
+                {% if user.is_authenticated %}
+                    <li>Welcome, {{ user.username }}!</li>
+                    <li><a href="{% url 'recipe_list' %}">All Recipes</a></li>
+                    <li><a href="{% url 'recipe_create' %}">Add New Recipe</a></li>
+                    <li><a href="{% url 'logout' %}">Logout</a></li>
+                {% else %}
+                    <li><a href="{% url 'login' %}">Login</a></li>
+                    <li><a href="{% url 'signup' %}">Sign Up</a></li>
+                {% endif %}
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header / Banner -->
+    <header>
+        <div class="banner">
+            <h1>Welcome to RecipeShare</h1>
+            <p>Share your culinary creations and discover new ideas from others!</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            {% block content %}
+            <!-- Dynamic content will be injected here (e.g., recipes, forms) -->
+            {% endblock %}
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 RecipeShare. All Rights Reserved.</p>
+            <p>Follow us on
+                <a href="https://instagram.com">Instagram</a> |
+                <a href="https://facebook.com">Facebook</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

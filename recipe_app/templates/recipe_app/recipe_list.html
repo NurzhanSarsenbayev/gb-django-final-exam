@@ -1,0 +1,22 @@
+{% extends './base.html' %}
+{% block content %}
+<h2>Recipe List</h2>
+<a href="{% url 'recipe_create' %}"><button class="btn">Add Recipe</button></a>
+<table id="recipe">
+  {% for recipe in recipe_list %}
+   <tr>
+    <th>Title</th>
+    <th>Description</th>
+      <th> </th>
+      <th> </th>
+  </tr>
+  <tr>
+      <td><a href="{% url 'recipe_detail' recipe.id%}">{{ recipe.title }}</a></td>
+      <td>{{ recipe.description }}</td>
+      <td><a href="{% url 'recipe_update' recipe.id %}"><button>Edit</button></a></td>
+      <td><a href="{% url 'recipe_delete' recipe.id %}"><button>Delete</button></a></td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}
+

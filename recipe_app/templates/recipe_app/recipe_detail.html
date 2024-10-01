@@ -1,0 +1,25 @@
+{% extends './base.html' %}
+
+{% block title %}
+    {{ recipe.title }} - Recipe Details
+{% endblock %}
+
+{% block content %}
+    <div class="recipe-detail">
+        <h1>{{ recipe.title }}</h1>
+        {% if recipe.image %}
+        <img src="{{ recipe.image.url }}" alt="{{ recipe.title }}" />
+        {% else %}
+        <p>No image available for this recipe.</p>
+        {% endif %}
+        <p><strong>Description:</strong> {{ recipe.description }}</p>
+        <p><strong>Cooking Time:</strong> {{ recipe.cooking_time }} minutes</p>
+        <p><strong>Ingredients:</strong> {{ recipe.ingredients }}</p>
+
+        <h3>Preparation Steps</h3>
+        <p>{{ recipe.process|linebreaks }}</p>
+
+        <p><strong>Author:</strong> {{ recipe.author.username }}</p>
+        <p><strong>Published on:</strong> {{ recipe.created_at|date:"F j, Y" }}</p>
+    </div>
+{% endblock %}
