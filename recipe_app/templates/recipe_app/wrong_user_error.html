@@ -1,0 +1,7 @@
+{% extends "recipe_app/base.html" %}
+
+{% block content %}
+    <h1>Oops! Something went wrong.</h1>
+    <p>Only an author can edit or delete his Recipes! Consider adding your own.</p>
+    <a href="{% url 'home' %}">Go to Home Page</a>
+{% endblock %}

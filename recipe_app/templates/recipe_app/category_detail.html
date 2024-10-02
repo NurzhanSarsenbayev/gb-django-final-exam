@@ -1,0 +1,16 @@
+{% extends './base.html' %}
+{% block content %}
+  <h1>Recipes for {{ category.name }}</h1>
+  <ul>
+    {% for recipe in recipes %}
+      <li>
+        <a href="{% url 'recipe_detail' recipe.pk %}">
+          {{ recipe.title }}
+        </a>
+      </li>
+    {% empty %}
+      <li>No recipes found in this category.</li>
+    {% endfor %}
+  </ul>
+  <a href="{% url 'category_list' %}">Back to categories</a>
+{% endblock %}

@@ -2,14 +2,17 @@
 {% block content %}
 <h2>Recipe List</h2>
 <a href="{% url 'recipe_create' %}"><button class="btn">Add Recipe</button></a>
-<table id="recipe">
-  {% for recipe in recipe_list %}
-   <tr>
+    <p></p>
+    <p></p>
+<table border="10" id="recipe">
+    <tr>
     <th>Title</th>
     <th>Description</th>
       <th> </th>
       <th> </th>
   </tr>
+  {% for recipe in recipe_list %}
+
   <tr>
       <td><a href="{% url 'recipe_detail' recipe.id%}">{{ recipe.title }}</a></td>
       <td>{{ recipe.description }}</td>

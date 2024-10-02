@@ -14,8 +14,23 @@
         {% endif %}
         <p><strong>Description:</strong> {{ recipe.description }}</p>
         <p><strong>Cooking Time:</strong> {{ recipe.cooking_time }} minutes</p>
-        <p><strong>Ingredients:</strong> {{ recipe.ingredients }}</p>
+        <h2>Ingredients</h2>
+<ul>
+    {% for ingredient in recipe.ingredients.all %}
+        <li>{{ ingredient.name }}</li>
+    {% empty %}
+        <li>No ingredients available.</li>
+    {% endfor %}
+</ul>
 
+<h2>Categories</h2>
+<ul>
+    {% for category in recipe.categories.all %}
+        <li>{{ category.name }}</li>
+    {% empty %}
+        <li>No categories available.</li>
+    {% endfor %}
+</ul>
         <h3>Preparation Steps</h3>
         <p>{{ recipe.process|linebreaks }}</p>
 

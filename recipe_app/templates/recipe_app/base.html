@@ -16,7 +16,7 @@
                 {% if user.is_authenticated %}
                     <li>Welcome, {{ user.username }}!</li>
                     <li><a href="{% url 'recipe_list' %}">All Recipes</a></li>
-                    <li><a href="{% url 'recipe_create' %}">Add New Recipe</a></li>
+                    <li><a href="{% url 'category_list' %}">All Categories</a></li>
                     <li><a href="{% url 'logout' %}">Logout</a></li>
                 {% else %}
                     <li><a href="{% url 'login' %}">Login</a></li>
@@ -46,7 +46,7 @@
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <p>&copy; 2024 RecipeShare. All Rights Reserved.</p>
+            <p>&copy; 2024 RecipeShare. All Rights Reserved. Made by Nurzhan Sarsenbayev for GB Final</p>
             <p>Follow us on
                 <a href="https://instagram.com">Instagram</a> |
                 <a href="https://facebook.com">Facebook</a>
