@@ -12,7 +12,12 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView, FormVi
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 # Create your views here.
 
+import logging
 
+logger = logging.getLogger(__name__)
+
+def some_view(request):
+    logger.debug('This is a debug message.')
 
 class SignUp(CreateView):
   form_class = UserCreationForm
@@ -136,7 +141,6 @@ class RecipeUpdate(LoginRequiredMixin, UpdateView):
     recipe = self.get_object()
     # Check if the user is the author of the recipe
     if recipe.author != request.user:
-      # Optionally redirect to a 403 forbidden page or some other page
       return redirect('wrong_user_error')
     return super().dispatch(request, *args, **kwargs)
 

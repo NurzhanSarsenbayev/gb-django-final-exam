@@ -30,12 +30,12 @@ class RecipeCreateForm(forms.ModelForm):
         fields = ['title', 'description', 'process', 'cooking_time', 'image']
 
     def save(self, commit=True):
-        # Step 1: Save the basic Recipe object (without M2M fields)
+        # Save the basic Recipe object (without M2M fields)
         recipe = super().save(commit=False)
-        # Step 2: Save the recipe to assign an ID
+        # Save the recipe to assign an ID
         recipe.save()
 
-        # Step 3: Initialize empty lists for categories and ingredients
+        # Initialize empty lists for categories and ingredients
         all_categories = []
         all_ingredients = []
 
@@ -73,7 +73,7 @@ class RecipeCreateForm(forms.ModelForm):
         if all_ingredients:
             recipe.ingredients.set(all_ingredients)
 
-        # Step 4: Save M2M relationships if commit is True
+        # Save M2M relationships if commit is True
         if commit:
             recipe.save()  # Ensure the recipe instance is saved
             self.save_m2m()  # Handle any additional M2M relations, if necessary
