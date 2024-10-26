@@ -1,8 +1,5 @@
 {% extends './base.html' %}
 {% block content %}
-    <p>Author ID: {{ request.user.id }}</p>
-    <p>Author Username: {{ request.user.username }}</p>
-    <p>Author Email: {{ request.user.email }}</p>
 <h2>Create Recipe</h2>
 <form method="post" enctype="multipart/form-data">
     {% csrf_token %}
