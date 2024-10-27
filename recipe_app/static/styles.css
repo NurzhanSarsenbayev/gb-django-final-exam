@@ -96,6 +96,12 @@ footer p {
     margin: 5px;
 }
 
+.recipe image {
+    width: 200px;
+    height: 150px;
+    object-fit: cover; /* This ensures the image fills the space, cropping if necessary */
+}
+
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     .nav-wrapper {
