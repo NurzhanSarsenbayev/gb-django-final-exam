@@ -11,16 +11,29 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 import os
 from pathlib import Path
-
+import json
+from django.core.exceptions import ImproperlyConfigured
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+KEYSDIR = str(BASE_DIR)+"/keys.json"
+
+with open(KEYSDIR) as k:
+    project_keys = json.loads(k.read())
+
+def getKey(setting,project_keys=project_keys):
+    try:
+        return project_keys[setting]
+    except KeyError:
+        errorMessage = "Set the {} env var".format(setting)
+        raise ImproperlyConfigured(errorMessage)
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '6f$2dJbJZ9k8@&m!lH%WzP^w*n3Yj3x3z)*K6ShA9r3sD9*b3$1bFv4Yj^G!8@6G5c'
+SECRET_KEY = getKey("SECRETKEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -28,7 +41,13 @@ DEBUG = False
 SESSION_COOKIE_SECURE = True  # Only send cookies over HTTPS
 CSRF_COOKIE_SECURE = True      # Only send CSRF cookies over HTTPS
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[::1]','shonan2030.pythonanywhere.com']
+
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    '[::1]',
+    'shonan2030.pythonanywhere.com',
+    ]
 
 
 # Application definition
@@ -121,10 +140,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = 'static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = '/home/shonan2030/gb-django-final-exam/recipe_app/static'
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR, 'recipe_app/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'recipe_app/media/')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
