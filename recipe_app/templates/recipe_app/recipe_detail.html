@@ -36,5 +36,27 @@
 
         <p><strong>Author:</strong> {{ recipe.author.username }}</p>
         <p><strong>Published on:</strong> {{ recipe.created_at|date:"F j, Y" }}</p>
+    <h2>Comments</h2>
+<div class="comments">
+    {% for comment in comments %}
+        <div class="comment">
+            <strong>{{ comment.author.username }}</strong>
+            <small>{{ comment.created_at|date:"M d, Y H:i" }}</small>
+            <p>{{ comment.text }}</p>
+        </div>
+    {% empty %}
+        <p>No comments yet. Be the first to comment!</p>
+    {% endfor %}
+</div>
+
+{% if user.is_authenticated %}
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Add Comment</button>
+    </form>
+{% else %}
+    <p>Please <a href="{% url 'login' %}">log in</a> to add a comment.</p>
+{% endif %}
     </div>
 {% endblock %}

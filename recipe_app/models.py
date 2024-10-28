@@ -54,7 +54,14 @@ class Ingredient(models.Model):
     def __str__(self):
         return self.name
 
+class Comment(models.Model):
+    author = models.ForeignKey(settings.AUTH_USER_MODEL,on_delete=models.CASCADE,related_name='comments',null=True, blank=True)
+    recipe = models.ForeignKey(Recipe,on_delete=models.CASCADE,related_name='comments')
+    text = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
 
+    def __str__(self):
+        return f'Comment by {self.author.username if self.author else "Unknown"} on {self.recipe.title}'
 '''
 TODO At this point, I don't believe this model is useful. 
 I tried various versions (both with ForeignKey and M2M relations),

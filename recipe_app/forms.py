@@ -116,3 +116,12 @@ class CategoryUpdateForm(forms.ModelForm):
         model = Category
         fields = '__all__'
 
+class CommentForm(forms.ModelForm):
+    class Meta:
+        model = Comment
+        fields = ['text']
+        widgets = {
+            'text': forms.Textarea(attrs={'rows': 3, 'placeholder': 'Add a comment...'}),
+        }
+
+

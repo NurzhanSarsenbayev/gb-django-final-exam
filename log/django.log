@@ -426,3 +426,1234 @@ WARNING 2024-10-26 03:30:26,767 log 2 123543617304448 Not Found: /media/recipe_i
 WARNING 2024-10-26 03:30:43,868 log 2 123543617304448 Not Found: /media/recipe_images/cin.webp
 WARNING 2024-10-26 03:31:02,083 log 2 123543617304448 Not Found: /media/recipe_images/french1.jpg
 WARNING 2024-10-26 03:32:20,773 log 2 123543617304448 Not Found: /media/recipe_images/c4fe8c2ff37b6b2a5f8b245c175f8f45.png
+INFO 2024-10-28 12:30:47,769 autoreload 24008 8148 Watching for file changes with StatReloader
+INFO 2024-10-28 12:30:51,268 basehttp 24008 4748 "GET / HTTP/1.1" 302 0
+INFO 2024-10-28 12:30:51,304 basehttp 24008 4748 "GET /login/?next=/ HTTP/1.1" 200 2086
+WARNING 2024-10-28 12:30:51,459 log 24008 4748 Not Found: /static/styles.css
+WARNING 2024-10-28 12:30:51,460 basehttp 24008 4748 "GET /static/styles.css HTTP/1.1" 404 1565
+WARNING 2024-10-28 12:30:51,544 log 24008 4748 Not Found: /favicon.ico
+WARNING 2024-10-28 12:30:51,545 basehttp 24008 4748 "GET /favicon.ico HTTP/1.1" 404 1565
+INFO 2024-10-28 12:30:55,877 basehttp 24008 4748 "POST /login/?next=/ HTTP/1.1" 302 0
+INFO 2024-10-28 12:30:55,886 basehttp 24008 4748 "GET / HTTP/1.1" 200 4100
+WARNING 2024-10-28 12:30:55,937 log 24008 4748 Not Found: /static/styles.css
+WARNING 2024-10-28 12:30:55,938 log 24008 19624 Not Found: /media/recipe_images/cake.webp
+WARNING 2024-10-28 12:30:55,940 log 24008 6328 Not Found: /media/recipe_images/french1.jpg
+WARNING 2024-10-28 12:30:55,941 basehttp 24008 4748 "GET /static/styles.css HTTP/1.1" 404 1692
+WARNING 2024-10-28 12:30:55,942 log 24008 5004 Not Found: /media/recipe_images/apple_jNWo8qJ.webp
+WARNING 2024-10-28 12:30:55,942 basehttp 24008 19624 "GET /media/recipe_images/cake.webp HTTP/1.1" 404 1692
+WARNING 2024-10-28 12:30:55,943 basehttp 24008 6328 "GET /media/recipe_images/french1.jpg HTTP/1.1" 404 1692
+WARNING 2024-10-28 12:30:55,943 log 24008 23336 Not Found: /media/recipe_images/jala.jpg
+WARNING 2024-10-28 12:30:55,944 basehttp 24008 5004 "GET /media/recipe_images/apple_jNWo8qJ.webp HTTP/1.1" 404 1692
+WARNING 2024-10-28 12:30:55,944 basehttp 24008 23336 "GET /media/recipe_images/jala.jpg HTTP/1.1" 404 1692
+INFO 2024-10-28 12:31:03,195 basehttp 24008 23336 "GET /recipes/9/ HTTP/1.1" 200 2732
+WARNING 2024-10-28 12:31:03,235 log 24008 23336 Not Found: /static/styles.css
+WARNING 2024-10-28 12:31:03,235 basehttp 24008 23336 "GET /static/styles.css HTTP/1.1" 404 1692
+INFO 2024-10-28 12:39:19,324 autoreload 11740 10148 Watching for file changes with StatReloader
+INFO 2024-10-28 12:39:20,790 basehttp 11740 12216 "GET / HTTP/1.1" 200 4115
+WARNING 2024-10-28 12:39:21,309 log 11740 12216 Not Found: /static/styles.css
+WARNING 2024-10-28 12:39:21,324 basehttp 11740 12216 "GET /static/styles.css HTTP/1.1" 404 1692
+WARNING 2024-10-28 12:39:21,328 log 11740 20216 Not Found: /media/recipe_images/jala.jpg
+WARNING 2024-10-28 12:39:21,331 log 11740 18000 Not Found: /media/recipe_images/cin.webp
+WARNING 2024-10-28 12:39:21,331 basehttp 11740 20216 "GET /media/recipe_images/jala.jpg HTTP/1.1" 404 1692
+WARNING 2024-10-28 12:39:21,332 log 11740 7440 Not Found: /media/recipe_images/marga.webp
+WARNING 2024-10-28 12:39:21,333 basehttp 11740 18000 "GET /media/recipe_images/cin.webp HTTP/1.1" 404 1692
+WARNING 2024-10-28 12:39:21,334 log 11740 2204 Not Found: /media/recipe_images/apple_jNWo8qJ.webp
+WARNING 2024-10-28 12:39:21,334 basehttp 11740 7440 "GET /media/recipe_images/marga.webp HTTP/1.1" 404 1692
+WARNING 2024-10-28 12:39:21,335 log 11740 1280 Not Found: /media/recipe_images/cake.webp
+WARNING 2024-10-28 12:39:21,335 basehttp 11740 2204 "GET /media/recipe_images/apple_jNWo8qJ.webp HTTP/1.1" 404 1692
+WARNING 2024-10-28 12:39:21,336 basehttp 11740 1280 "GET /media/recipe_images/cake.webp HTTP/1.1" 404 1692
+ERROR 2024-10-28 12:39:22,692 log 11740 1280 Internal Server Error: /recipes/12/
+Traceback (most recent call last):
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: recipe_app_comment
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: recipe_app_comment
+ERROR 2024-10-28 12:39:22,735 basehttp 11740 1280 "GET /recipes/12/ HTTP/1.1" 500 1565
+WARNING 2024-10-28 12:39:22,774 log 11740 1280 Not Found: /static/styles.css
+WARNING 2024-10-28 12:39:22,775 basehttp 11740 1280 "GET /static/styles.css HTTP/1.1" 404 1692
+ERROR 2024-10-28 12:39:28,043 log 11740 1280 Internal Server Error: /recipes/13/
+Traceback (most recent call last):
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: recipe_app_comment
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: recipe_app_comment
+ERROR 2024-10-28 12:39:28,047 basehttp 11740 1280 "GET /recipes/13/ HTTP/1.1" 500 1565
+WARNING 2024-10-28 12:39:28,091 log 11740 1280 Not Found: /static/styles.css
+WARNING 2024-10-28 12:39:28,092 basehttp 11740 1280 "GET /static/styles.css HTTP/1.1" 404 1692
+INFO 2024-10-28 12:39:37,454 basehttp 11740 1280 "GET /login/ HTTP/1.1" 200 2213
+WARNING 2024-10-28 12:39:37,500 log 11740 1280 Not Found: /static/styles.css
+WARNING 2024-10-28 12:39:37,501 basehttp 11740 1280 "GET /static/styles.css HTTP/1.1" 404 1692
+INFO 2024-10-28 12:39:42,956 basehttp 11740 1280 "POST /login/ HTTP/1.1" 302 0
+INFO 2024-10-28 12:39:42,963 basehttp 11740 1280 "GET / HTTP/1.1" 200 4215
+WARNING 2024-10-28 12:39:43,018 log 11740 1280 Not Found: /static/styles.css
+WARNING 2024-10-28 12:39:43,020 log 11740 2204 Not Found: /media/recipe_images/french1.jpg
+WARNING 2024-10-28 12:39:43,021 log 11740 20216 Not Found: /media/recipe_images/cake.webp
+WARNING 2024-10-28 12:39:43,021 log 11740 18000 Not Found: /media/recipe_images/salad.jpg
+WARNING 2024-10-28 12:39:43,022 basehttp 11740 1280 "GET /static/styles.css HTTP/1.1" 404 1692
+WARNING 2024-10-28 12:39:43,022 basehttp 11740 20216 "GET /media/recipe_images/cake.webp HTTP/1.1" 404 1692
+WARNING 2024-10-28 12:39:43,022 basehttp 11740 2204 "GET /media/recipe_images/french1.jpg HTTP/1.1" 404 1692
+WARNING 2024-10-28 12:39:43,022 basehttp 11740 18000 "GET /media/recipe_images/salad.jpg HTTP/1.1" 404 1692
+WARNING 2024-10-28 12:39:43,027 log 11740 7440 Not Found: /media/recipe_images/apple_jNWo8qJ.webp
+WARNING 2024-10-28 12:39:43,028 basehttp 11740 7440 "GET /media/recipe_images/apple_jNWo8qJ.webp HTTP/1.1" 404 1692
+ERROR 2024-10-28 12:39:44,236 log 11740 7440 Internal Server Error: /recipes/6/
+Traceback (most recent call last):
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: recipe_app_comment
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: recipe_app_comment
+ERROR 2024-10-28 12:39:44,240 basehttp 11740 7440 "GET /recipes/6/ HTTP/1.1" 500 1565
+WARNING 2024-10-28 12:39:44,290 log 11740 7440 Not Found: /static/styles.css
+WARNING 2024-10-28 12:39:44,291 basehttp 11740 7440 "GET /static/styles.css HTTP/1.1" 404 1692
+INFO 2024-10-28 12:41:22,395 autoreload 17472 5348 Watching for file changes with StatReloader
+INFO 2024-10-28 12:41:24,776 basehttp 17472 3208 "GET / HTTP/1.1" 200 4316
+WARNING 2024-10-28 12:41:24,952 log 17472 3208 Not Found: /static/styles.css
+WARNING 2024-10-28 12:41:24,953 basehttp 17472 3208 "GET /static/styles.css HTTP/1.1" 404 1692
+WARNING 2024-10-28 12:41:24,959 log 17472 1224 Not Found: /media/recipe_images/jala.jpg
+WARNING 2024-10-28 12:41:24,965 basehttp 17472 1224 "GET /media/recipe_images/jala.jpg HTTP/1.1" 404 1692
+WARNING 2024-10-28 12:41:24,978 log 17472 13260 Not Found: /media/recipe_images/marga.webp
+WARNING 2024-10-28 12:41:24,978 log 17472 3208 Not Found: /media/recipe_images/salad.jpg
+WARNING 2024-10-28 12:41:24,981 log 17472 8432 Not Found: /media/recipe_images/french1.jpg
+WARNING 2024-10-28 12:41:24,981 basehttp 17472 3208 "GET /media/recipe_images/salad.jpg HTTP/1.1" 404 1692
+WARNING 2024-10-28 12:41:24,981 basehttp 17472 13260 "GET /media/recipe_images/marga.webp HTTP/1.1" 404 1692
+WARNING 2024-10-28 12:41:24,982 log 17472 23500 Not Found: /media/recipe_images/cin.webp
+WARNING 2024-10-28 12:41:24,982 basehttp 17472 8432 "GET /media/recipe_images/french1.jpg HTTP/1.1" 404 1692
+WARNING 2024-10-28 12:41:24,983 basehttp 17472 23500 "GET /media/recipe_images/cin.webp HTTP/1.1" 404 1692
+INFO 2024-10-28 12:41:29,083 basehttp 17472 23500 "GET /recipes/12/ HTTP/1.1" 200 3139
+WARNING 2024-10-28 12:41:29,123 log 17472 23500 Not Found: /static/styles.css
+WARNING 2024-10-28 12:41:29,124 log 17472 8432 Not Found: /media/recipe_images/jala.jpg
+WARNING 2024-10-28 12:41:29,125 basehttp 17472 23500 "GET /static/styles.css HTTP/1.1" 404 1692
+WARNING 2024-10-28 12:41:29,125 basehttp 17472 8432 "GET /media/recipe_images/jala.jpg HTTP/1.1" 404 1692
+ERROR 2024-10-28 12:41:43,755 log 17472 8432 Internal Server Error: /recipes/12/
+Traceback (most recent call last):
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: recipe_app_comment.author_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\recipe_app\views.py", line 99, in post
+    comment.save()
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\models\base.py", line 891, in save
+    self.save_base(
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\models\base.py", line 997, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\models\base.py", line 1160, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\models\base.py", line 1201, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: recipe_app_comment.author_id
+ERROR 2024-10-28 12:41:43,769 basehttp 17472 8432 "POST /recipes/12/ HTTP/1.1" 500 1565
+WARNING 2024-10-28 12:41:43,825 log 17472 8432 Not Found: /static/styles.css
+WARNING 2024-10-28 12:41:43,826 basehttp 17472 8432 "GET /static/styles.css HTTP/1.1" 404 1692
+INFO 2024-10-28 12:45:15,106 autoreload 11036 7836 Watching for file changes with StatReloader
+INFO 2024-10-28 12:45:22,725 basehttp 11036 10380 "GET /recipes/12/ HTTP/1.1" 200 3139
+WARNING 2024-10-28 12:45:22,757 log 11036 10380 Not Found: /static/styles.css
+WARNING 2024-10-28 12:45:22,758 log 11036 12340 Not Found: /media/recipe_images/jala.jpg
+WARNING 2024-10-28 12:45:22,758 basehttp 11036 10380 "GET /static/styles.css HTTP/1.1" 404 1692
+WARNING 2024-10-28 12:45:22,759 basehttp 11036 12340 "GET /media/recipe_images/jala.jpg HTTP/1.1" 404 1692
+INFO 2024-10-28 12:45:31,310 basehttp 11036 12340 "POST /recipes/12/ HTTP/1.1" 302 0
+INFO 2024-10-28 12:45:31,320 basehttp 11036 12340 "GET /recipes/12/ HTTP/1.1" 200 3228
+WARNING 2024-10-28 12:45:31,369 log 11036 12340 Not Found: /static/styles.css
+WARNING 2024-10-28 12:45:31,370 log 11036 10380 Not Found: /media/recipe_images/jala.jpg
+WARNING 2024-10-28 12:45:31,370 basehttp 11036 12340 "GET /static/styles.css HTTP/1.1" 404 1692
+WARNING 2024-10-28 12:45:31,370 basehttp 11036 10380 "GET /media/recipe_images/jala.jpg HTTP/1.1" 404 1692
+INFO 2024-10-28 12:45:51,252 basehttp 11036 10380 "GET /logout/ HTTP/1.1" 302 0
+INFO 2024-10-28 12:45:51,258 basehttp 11036 10380 "GET / HTTP/1.1" 302 0
+INFO 2024-10-28 12:45:51,264 basehttp 11036 10380 "GET /login/?next=/ HTTP/1.1" 200 2086
+WARNING 2024-10-28 12:45:51,315 log 11036 10380 Not Found: /static/styles.css
+WARNING 2024-10-28 12:45:51,316 basehttp 11036 10380 "GET /static/styles.css HTTP/1.1" 404 1565
+INFO 2024-10-28 12:45:59,662 basehttp 11036 10380 "POST /login/?next=/ HTTP/1.1" 200 2245
+WARNING 2024-10-28 12:45:59,698 log 11036 10380 Not Found: /static/styles.css
+WARNING 2024-10-28 12:45:59,699 basehttp 11036 10380 "GET /static/styles.css HTTP/1.1" 404 1565
+INFO 2024-10-28 12:46:05,336 basehttp 11036 10380 "POST /login/?next=/ HTTP/1.1" 302 0
+INFO 2024-10-28 12:46:05,343 basehttp 11036 10380 "GET / HTTP/1.1" 200 4314
+WARNING 2024-10-28 12:46:05,398 log 11036 10380 Not Found: /static/styles.css
+WARNING 2024-10-28 12:46:05,399 log 11036 12340 Not Found: /media/recipe_images/marga.webp
+WARNING 2024-10-28 12:46:05,399 basehttp 11036 10380 "GET /static/styles.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 12:46:05,399 basehttp 11036 12340 "GET /media/recipe_images/marga.webp HTTP/1.1" 404 1690
+WARNING 2024-10-28 12:46:05,407 log 11036 16880 Not Found: /media/recipe_images/cin.webp
+WARNING 2024-10-28 12:46:05,408 log 11036 1840 Not Found: /media/recipe_images/french1.jpg
+WARNING 2024-10-28 12:46:05,409 log 11036 22568 Not Found: /media/recipe_images/jala.jpg
+WARNING 2024-10-28 12:46:05,409 basehttp 11036 16880 "GET /media/recipe_images/cin.webp HTTP/1.1" 404 1690
+WARNING 2024-10-28 12:46:05,410 basehttp 11036 1840 "GET /media/recipe_images/french1.jpg HTTP/1.1" 404 1690
+WARNING 2024-10-28 12:46:05,410 basehttp 11036 22568 "GET /media/recipe_images/jala.jpg HTTP/1.1" 404 1690
+WARNING 2024-10-28 12:46:05,421 log 11036 19704 Not Found: /media/recipe_images/salad.jpg
+WARNING 2024-10-28 12:46:05,422 basehttp 11036 19704 "GET /media/recipe_images/salad.jpg HTTP/1.1" 404 1690
+INFO 2024-10-28 12:46:10,663 basehttp 11036 19704 "GET / HTTP/1.1" 200 4145
+WARNING 2024-10-28 12:46:10,711 log 11036 1840 Not Found: /media/recipe_images/cake.webp
+WARNING 2024-10-28 12:46:10,712 log 11036 19704 Not Found: /static/styles.css
+WARNING 2024-10-28 12:46:10,713 basehttp 11036 1840 "GET /media/recipe_images/cake.webp HTTP/1.1" 404 1690
+WARNING 2024-10-28 12:46:10,714 log 11036 10380 Not Found: /media/recipe_images/french1.jpg
+WARNING 2024-10-28 12:46:10,714 log 11036 16880 Not Found: /media/recipe_images/apple_jNWo8qJ.webp
+WARNING 2024-10-28 12:46:10,714 log 11036 22568 Not Found: /media/recipe_images/salad.jpg
+WARNING 2024-10-28 12:46:10,715 basehttp 11036 19704 "GET /static/styles.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 12:46:10,715 log 11036 12340 Not Found: /media/recipe_images/cin.webp
+WARNING 2024-10-28 12:46:10,716 basehttp 11036 10380 "GET /media/recipe_images/french1.jpg HTTP/1.1" 404 1690
+WARNING 2024-10-28 12:46:10,716 basehttp 11036 16880 "GET /media/recipe_images/apple_jNWo8qJ.webp HTTP/1.1" 404 1690
+WARNING 2024-10-28 12:46:10,716 basehttp 11036 22568 "GET /media/recipe_images/salad.jpg HTTP/1.1" 404 1690
+WARNING 2024-10-28 12:46:10,716 basehttp 11036 12340 "GET /media/recipe_images/cin.webp HTTP/1.1" 404 1690
+INFO 2024-10-28 12:46:13,670 basehttp 11036 12340 "GET / HTTP/1.1" 200 4283
+WARNING 2024-10-28 12:46:13,715 log 11036 12340 Not Found: /static/styles.css
+WARNING 2024-10-28 12:46:13,717 basehttp 11036 12340 "GET /static/styles.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 12:46:13,717 log 11036 16880 Not Found: /media/recipe_images/salad.jpg
+WARNING 2024-10-28 12:46:13,718 log 11036 1840 Not Found: /media/recipe_images/jala.jpg
+WARNING 2024-10-28 12:46:13,718 log 11036 19704 Not Found: /media/recipe_images/cake.webp
+WARNING 2024-10-28 12:46:13,719 log 11036 22568 Not Found: /media/recipe_images/cin.webp
+WARNING 2024-10-28 12:46:13,719 log 11036 10380 Not Found: /media/recipe_images/marga.webp
+WARNING 2024-10-28 12:46:13,720 basehttp 11036 16880 "GET /media/recipe_images/salad.jpg HTTP/1.1" 404 1690
+WARNING 2024-10-28 12:46:13,720 basehttp 11036 1840 "GET /media/recipe_images/jala.jpg HTTP/1.1" 404 1690
+WARNING 2024-10-28 12:46:13,721 basehttp 11036 22568 "GET /media/recipe_images/cin.webp HTTP/1.1" 404 1690
+WARNING 2024-10-28 12:46:13,721 basehttp 11036 10380 "GET /media/recipe_images/marga.webp HTTP/1.1" 404 1690
+WARNING 2024-10-28 12:46:13,721 basehttp 11036 19704 "GET /media/recipe_images/cake.webp HTTP/1.1" 404 1690
+INFO 2024-10-28 12:46:16,015 basehttp 11036 10380 "GET / HTTP/1.1" 200 4188
+WARNING 2024-10-28 12:46:16,058 log 11036 10380 Not Found: /static/styles.css
+WARNING 2024-10-28 12:46:16,059 log 11036 19704 Not Found: /media/recipe_images/salad.jpg
+WARNING 2024-10-28 12:46:16,060 log 11036 22568 Not Found: /media/recipe_images/jala.jpg
+WARNING 2024-10-28 12:46:16,060 basehttp 11036 10380 "GET /static/styles.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 12:46:16,061 log 11036 1840 Not Found: /media/recipe_images/cin.webp
+WARNING 2024-10-28 12:46:16,061 basehttp 11036 19704 "GET /media/recipe_images/salad.jpg HTTP/1.1" 404 1690
+WARNING 2024-10-28 12:46:16,061 basehttp 11036 22568 "GET /media/recipe_images/jala.jpg HTTP/1.1" 404 1690
+WARNING 2024-10-28 12:46:16,061 basehttp 11036 1840 "GET /media/recipe_images/cin.webp HTTP/1.1" 404 1690
+WARNING 2024-10-28 12:46:16,074 log 11036 16880 Not Found: /media/recipe_images/cake.webp
+WARNING 2024-10-28 12:46:16,075 basehttp 11036 16880 "GET /media/recipe_images/cake.webp HTTP/1.1" 404 1690
+INFO 2024-10-28 12:46:18,826 basehttp 11036 16880 "GET /recipes/9/ HTTP/1.1" 200 3261
+WARNING 2024-10-28 12:46:18,873 log 11036 16880 Not Found: /static/styles.css
+WARNING 2024-10-28 12:46:18,873 basehttp 11036 16880 "GET /static/styles.css HTTP/1.1" 404 1690
+INFO 2024-10-28 12:46:23,028 basehttp 11036 16880 "GET /login/?next=/ HTTP/1.1" 200 2211
+INFO 2024-10-28 12:46:28,178 basehttp 11036 16880 "GET /recipes/12/ HTTP/1.1" 200 3226
+WARNING 2024-10-28 12:46:28,218 log 11036 1840 Not Found: /media/recipe_images/jala.jpg
+WARNING 2024-10-28 12:46:28,219 log 11036 16880 Not Found: /static/styles.css
+WARNING 2024-10-28 12:46:28,219 basehttp 11036 1840 "GET /media/recipe_images/jala.jpg HTTP/1.1" 404 1690
+WARNING 2024-10-28 12:46:28,219 basehttp 11036 16880 "GET /static/styles.css HTTP/1.1" 404 1690
+INFO 2024-10-28 12:47:16,891 basehttp 11036 16880 "GET /recipes/12/ HTTP/1.1" 200 3226
+WARNING 2024-10-28 12:47:16,928 log 11036 16880 Not Found: /static/styles.css
+WARNING 2024-10-28 12:47:16,929 basehttp 11036 16880 "GET /static/styles.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 12:47:16,931 log 11036 1840 Not Found: /media/recipe_images/jala.jpg
+WARNING 2024-10-28 12:47:16,932 basehttp 11036 1840 "GET /media/recipe_images/jala.jpg HTTP/1.1" 404 1690
+INFO 2024-10-28 12:47:18,667 basehttp 11036 1840 "GET /recipes/12/ HTTP/1.1" 200 3226
+WARNING 2024-10-28 12:47:18,703 log 11036 1840 Not Found: /static/styles.css
+WARNING 2024-10-28 12:47:18,705 basehttp 11036 1840 "GET /static/styles.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 12:47:18,706 log 11036 16880 Not Found: /media/recipe_images/jala.jpg
+WARNING 2024-10-28 12:47:18,706 basehttp 11036 16880 "GET /media/recipe_images/jala.jpg HTTP/1.1" 404 1690
+INFO 2024-10-28 12:47:19,334 basehttp 11036 16880 "GET /recipes/12/ HTTP/1.1" 200 3226
+WARNING 2024-10-28 12:47:19,374 log 11036 16880 Not Found: /static/styles.css
+WARNING 2024-10-28 12:47:19,375 log 11036 1840 Not Found: /media/recipe_images/jala.jpg
+WARNING 2024-10-28 12:47:19,375 basehttp 11036 16880 "GET /static/styles.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 12:47:19,375 basehttp 11036 1840 "GET /media/recipe_images/jala.jpg HTTP/1.1" 404 1690
+INFO 2024-10-28 12:47:37,137 autoreload 20460 13232 Watching for file changes with StatReloader
+INFO 2024-10-28 12:47:44,298 basehttp 20460 1236 "GET /recipes/12/ HTTP/1.1" 200 3226
+WARNING 2024-10-28 12:47:44,333 log 20460 1236 Not Found: /static/styles.css
+WARNING 2024-10-28 12:47:44,333 basehttp 20460 1236 "GET /static/styles.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 12:47:44,337 log 20460 2508 Not Found: /media/recipe_images/jala.jpg
+WARNING 2024-10-28 12:47:44,337 basehttp 20460 2508 "GET /media/recipe_images/jala.jpg HTTP/1.1" 404 1690
+INFO 2024-10-28 12:47:45,134 basehttp 20460 2508 "GET /recipes/12/ HTTP/1.1" 200 3226
+WARNING 2024-10-28 12:47:45,170 log 20460 2508 Not Found: /static/styles.css
+WARNING 2024-10-28 12:47:45,171 log 20460 1236 Not Found: /media/recipe_images/jala.jpg
+WARNING 2024-10-28 12:47:45,171 basehttp 20460 2508 "GET /static/styles.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 12:47:45,172 basehttp 20460 1236 "GET /media/recipe_images/jala.jpg HTTP/1.1" 404 1690
+INFO 2024-10-28 12:47:48,621 basehttp 20460 1236 "POST /recipes/12/ HTTP/1.1" 302 0
+INFO 2024-10-28 12:47:48,632 basehttp 20460 1236 "GET /recipes/12/ HTTP/1.1" 200 3375
+WARNING 2024-10-28 12:47:48,690 log 20460 1236 Not Found: /static/styles.css
+WARNING 2024-10-28 12:47:48,691 log 20460 2508 Not Found: /media/recipe_images/jala.jpg
+WARNING 2024-10-28 12:47:48,691 basehttp 20460 1236 "GET /static/styles.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 12:47:48,691 basehttp 20460 2508 "GET /media/recipe_images/jala.jpg HTTP/1.1" 404 1690
+INFO 2024-10-28 12:48:19,088 autoreload 20460 13232 C:\Users\Nurzhan\PycharmProjects\gb_django_final\recipe_app\models.py changed, reloading.
+INFO 2024-10-28 12:48:19,452 autoreload 23308 3828 Watching for file changes with StatReloader
+INFO 2024-10-28 12:48:20,847 basehttp 23308 18064 "GET /recipes/12/ HTTP/1.1" 200 3375
+WARNING 2024-10-28 12:48:20,880 log 23308 18064 Not Found: /static/styles.css
+WARNING 2024-10-28 12:48:20,881 basehttp 23308 18064 "GET /static/styles.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 12:48:20,884 log 23308 21056 Not Found: /media/recipe_images/jala.jpg
+WARNING 2024-10-28 12:48:20,884 basehttp 23308 21056 "GET /media/recipe_images/jala.jpg HTTP/1.1" 404 1690
+INFO 2024-10-28 12:48:21,622 basehttp 23308 21056 "GET /recipes/12/ HTTP/1.1" 200 3375
+WARNING 2024-10-28 12:48:21,659 log 23308 21056 Not Found: /static/styles.css
+WARNING 2024-10-28 12:48:21,660 basehttp 23308 21056 "GET /static/styles.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 12:48:21,661 log 23308 18064 Not Found: /media/recipe_images/jala.jpg
+WARNING 2024-10-28 12:48:21,661 basehttp 23308 18064 "GET /media/recipe_images/jala.jpg HTTP/1.1" 404 1690
+INFO 2024-10-28 12:48:21,795 basehttp 23308 18064 "GET /recipes/12/ HTTP/1.1" 200 3375
+WARNING 2024-10-28 12:48:21,827 log 23308 18064 Not Found: /static/styles.css
+WARNING 2024-10-28 12:48:21,828 log 23308 21056 Not Found: /media/recipe_images/jala.jpg
+WARNING 2024-10-28 12:48:21,828 basehttp 23308 18064 "GET /static/styles.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 12:48:21,829 basehttp 23308 21056 "GET /media/recipe_images/jala.jpg HTTP/1.1" 404 1690
+INFO 2024-10-28 12:48:21,972 basehttp 23308 21056 "GET /recipes/12/ HTTP/1.1" 200 3375
+WARNING 2024-10-28 12:48:22,002 log 23308 21056 Not Found: /static/styles.css
+WARNING 2024-10-28 12:48:22,002 log 23308 18064 Not Found: /media/recipe_images/jala.jpg
+WARNING 2024-10-28 12:48:22,003 basehttp 23308 21056 "GET /static/styles.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 12:48:22,003 basehttp 23308 18064 "GET /media/recipe_images/jala.jpg HTTP/1.1" 404 1690
+INFO 2024-10-28 12:48:22,128 basehttp 23308 18064 "GET /recipes/12/ HTTP/1.1" 200 3375
+WARNING 2024-10-28 12:48:22,161 log 23308 18064 Not Found: /static/styles.css
+WARNING 2024-10-28 12:48:22,161 log 23308 21056 Not Found: /media/recipe_images/jala.jpg
+WARNING 2024-10-28 12:48:22,162 basehttp 23308 18064 "GET /static/styles.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 12:48:22,162 basehttp 23308 21056 "GET /media/recipe_images/jala.jpg HTTP/1.1" 404 1690
+INFO 2024-10-28 12:48:25,205 basehttp 23308 21056 "POST /recipes/12/ HTTP/1.1" 302 0
+INFO 2024-10-28 12:48:25,215 basehttp 23308 21056 "GET /recipes/12/ HTTP/1.1" 200 3524
+WARNING 2024-10-28 12:48:25,258 log 23308 21056 Not Found: /static/styles.css
+WARNING 2024-10-28 12:48:25,258 log 23308 18064 Not Found: /media/recipe_images/jala.jpg
+WARNING 2024-10-28 12:48:25,259 basehttp 23308 21056 "GET /static/styles.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 12:48:25,259 basehttp 23308 18064 "GET /media/recipe_images/jala.jpg HTTP/1.1" 404 1690
+INFO 2024-10-28 12:58:44,486 autoreload 15028 6084 Watching for file changes with StatReloader
+INFO 2024-10-28 12:58:47,460 basehttp 15028 17020 "GET /recipes/12/ HTTP/1.1" 200 3536
+WARNING 2024-10-28 12:58:47,497 log 15028 17020 Not Found: /static/styles.css
+WARNING 2024-10-28 12:58:47,499 basehttp 15028 17020 "GET /static/styles.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 12:58:47,499 log 15028 22308 Not Found: /media/recipe_images/jala.jpg
+WARNING 2024-10-28 12:58:47,500 basehttp 15028 22308 "GET /media/recipe_images/jala.jpg HTTP/1.1" 404 1690
+INFO 2024-10-28 13:04:13,747 autoreload 15028 6084 C:\Users\Nurzhan\PycharmProjects\gb_django_final\recipe_app\views.py changed, reloading.
+INFO 2024-10-28 13:04:14,150 autoreload 19688 12048 Watching for file changes with StatReloader
+INFO 2024-10-28 13:04:47,648 basehttp 19688 1376 "GET /recipes/12/ HTTP/1.1" 200 3524
+WARNING 2024-10-28 13:04:47,683 log 19688 1376 Not Found: /static/styles.css
+WARNING 2024-10-28 13:04:47,685 basehttp 19688 1376 "GET /static/styles.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 13:04:47,687 log 19688 23880 Not Found: /media/recipe_images/jala.jpg
+WARNING 2024-10-28 13:04:47,687 basehttp 19688 23880 "GET /media/recipe_images/jala.jpg HTTP/1.1" 404 1690
+INFO 2024-10-28 13:04:52,685 basehttp 19688 23880 "POST /recipes/12/ HTTP/1.1" 302 0
+INFO 2024-10-28 13:04:52,696 basehttp 19688 23880 "GET /recipes/12/ HTTP/1.1" 200 3679
+WARNING 2024-10-28 13:04:52,755 log 19688 23880 Not Found: /static/styles.css
+WARNING 2024-10-28 13:04:52,756 log 19688 1376 Not Found: /media/recipe_images/jala.jpg
+WARNING 2024-10-28 13:04:52,756 basehttp 19688 1376 "GET /media/recipe_images/jala.jpg HTTP/1.1" 404 1690
+WARNING 2024-10-28 13:04:52,756 basehttp 19688 23880 "GET /static/styles.css HTTP/1.1" 404 1690
+INFO 2024-10-28 13:05:09,054 basehttp 19688 23880 "GET /admin HTTP/1.1" 301 0
+INFO 2024-10-28 13:05:09,080 basehttp 19688 1376 "GET /admin/ HTTP/1.1" 200 11953
+WARNING 2024-10-28 13:05:09,125 log 19688 1376 Not Found: /static/admin/css/base.css
+WARNING 2024-10-28 13:05:09,127 basehttp 19688 1376 "GET /static/admin/css/base.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 13:05:09,132 log 19688 10552 Not Found: /static/admin/css/dark_mode.css
+WARNING 2024-10-28 13:05:09,136 basehttp 19688 10552 "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 13:05:09,139 log 19688 1376 Not Found: /static/admin/js/theme.js
+WARNING 2024-10-28 13:05:09,142 log 19688 5248 Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2024-10-28 13:05:09,143 log 19688 18288 Not Found: /static/admin/css/dashboard.css
+WARNING 2024-10-28 13:05:09,143 basehttp 19688 1376 "GET /static/admin/js/theme.js HTTP/1.1" 404 1690
+WARNING 2024-10-28 13:05:09,144 log 19688 12284 Not Found: /static/admin/css/responsive.css
+WARNING 2024-10-28 13:05:09,144 basehttp 19688 5248 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 13:05:09,144 basehttp 19688 18288 "GET /static/admin/css/dashboard.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 13:05:09,145 basehttp 19688 12284 "GET /static/admin/css/responsive.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 13:05:09,152 log 19688 12284 Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2024-10-28 13:05:09,152 basehttp 19688 12284 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 1690
+INFO 2024-10-28 13:05:22,835 basehttp 19688 12284 "GET /admin/recipe_app/ HTTP/1.1" 200 6539
+WARNING 2024-10-28 13:05:22,911 log 19688 5248 Not Found: /static/admin/js/theme.js
+WARNING 2024-10-28 13:05:22,912 log 19688 18288 Not Found: /static/admin/css/dark_mode.css
+WARNING 2024-10-28 13:05:22,912 log 19688 12284 Not Found: /static/admin/css/base.css
+WARNING 2024-10-28 13:05:22,913 log 19688 10552 Not Found: /static/admin/css/dashboard.css
+WARNING 2024-10-28 13:05:22,914 log 19688 5156 Not Found: /static/admin/css/responsive.css
+WARNING 2024-10-28 13:05:22,914 basehttp 19688 5248 "GET /static/admin/js/theme.js HTTP/1.1" 404 1690
+WARNING 2024-10-28 13:05:22,915 basehttp 19688 18288 "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 13:05:22,915 basehttp 19688 12284 "GET /static/admin/css/base.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 13:05:22,916 log 19688 1376 Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2024-10-28 13:05:22,916 basehttp 19688 10552 "GET /static/admin/css/dashboard.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 13:05:22,916 basehttp 19688 5156 "GET /static/admin/css/responsive.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 13:05:22,917 basehttp 19688 1376 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 13:05:22,929 log 19688 1376 Not Found: /static/admin/css/dashboard.css
+WARNING 2024-10-28 13:05:22,930 log 19688 5156 Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2024-10-28 13:05:22,930 basehttp 19688 1376 "GET /static/admin/css/dashboard.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 13:05:22,930 basehttp 19688 5156 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 1690
+INFO 2024-10-28 13:06:04,107 autoreload 19688 12048 C:\Users\Nurzhan\PycharmProjects\gb_django_final\recipe_app\admin.py changed, reloading.
+INFO 2024-10-28 13:06:04,495 autoreload 12380 15640 Watching for file changes with StatReloader
+INFO 2024-10-28 13:06:04,864 basehttp 12380 5604 "GET /admin/recipe_app/ HTTP/1.1" 200 7160
+WARNING 2024-10-28 13:06:04,914 log 12380 5604 Not Found: /static/admin/css/base.css
+WARNING 2024-10-28 13:06:04,916 log 12380 15336 Not Found: /static/admin/css/dashboard.css
+WARNING 2024-10-28 13:06:04,916 basehttp 12380 5604 "GET /static/admin/css/base.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 13:06:04,917 log 12380 24036 Not Found: /static/admin/js/theme.js
+WARNING 2024-10-28 13:06:04,918 log 12380 9260 Not Found: /static/admin/css/responsive.css
+WARNING 2024-10-28 13:06:04,919 basehttp 12380 15336 "GET /static/admin/css/dashboard.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 13:06:04,919 log 12380 24540 Not Found: /static/admin/css/dark_mode.css
+WARNING 2024-10-28 13:06:04,920 log 12380 18828 Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2024-10-28 13:06:04,920 basehttp 12380 9260 "GET /static/admin/css/responsive.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 13:06:04,921 basehttp 12380 24036 "GET /static/admin/js/theme.js HTTP/1.1" 404 1690
+WARNING 2024-10-28 13:06:04,921 basehttp 12380 24540 "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 13:06:04,921 basehttp 12380 18828 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 13:06:04,940 log 12380 24036 Not Found: /static/admin/css/dashboard.css
+WARNING 2024-10-28 13:06:04,941 log 12380 24540 Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2024-10-28 13:06:04,942 log 12380 18828 Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2024-10-28 13:06:04,942 log 12380 9260 Not Found: /static/admin/css/responsive.css
+WARNING 2024-10-28 13:06:04,942 basehttp 12380 24036 "GET /static/admin/css/dashboard.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 13:06:04,943 basehttp 12380 24540 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 13:06:04,943 basehttp 12380 18828 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 1690
+WARNING 2024-10-28 13:06:04,943 basehttp 12380 9260 "GET /static/admin/css/responsive.css HTTP/1.1" 404 1690
+ERROR 2024-10-28 13:06:06,260 log 12380 9260 Internal Server Error: /admin/recipe_app/comment/
+Traceback (most recent call last):
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\models\options.py", line 676, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\contrib\admin\utils.py", line 290, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\contrib\admin\utils.py", line 330, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\models\options.py", line 678, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Comment has no field named 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 346, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 322, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 313, in __init__
+    super().__init__(*items)
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 218, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\contrib\admin\utils.py", line 299, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\contrib\admin\options.py", line 1030, in action_checkbox
+    _("Select this object for an action - {}"), str(obj)
+                                                ^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\recipe_app\models.py", line 64, in __str__
+    return f'Comment by {self.author.username} on {self.recipe.title}'
+                         ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'username'
+ERROR 2024-10-28 13:06:06,281 basehttp 12380 9260 "GET /admin/recipe_app/comment/ HTTP/1.1" 500 1565
+WARNING 2024-10-28 13:06:06,317 log 12380 9260 Not Found: /static/styles.css
+WARNING 2024-10-28 13:06:06,317 basehttp 12380 9260 "GET /static/styles.css HTTP/1.1" 404 1690
+INFO 2024-10-28 13:06:09,726 basehttp 12380 9260 "GET /admin/recipe_app/ HTTP/1.1" 200 7160
+INFO 2024-10-28 13:06:12,767 basehttp 12380 9260 "GET /admin/recipe_app/ HTTP/1.1" 200 7160
+INFO 2024-10-28 13:06:13,899 basehttp 12380 9260 "GET /admin/recipe_app/category/ HTTP/1.1" 200 14010
+WARNING 2024-10-28 13:06:13,979 log 12380 9260 Not Found: /static/admin/css/base.css
+WARNING 2024-10-28 13:06:13,981 basehttp 12380 9260 "GET /static/admin/css/base.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 13:06:13,982 log 12380 18828 Not Found: /static/admin/css/dark_mode.css
+WARNING 2024-10-28 13:06:13,983 log 12380 24036 Not Found: /static/admin/css/changelists.css
+WARNING 2024-10-28 13:06:13,983 log 12380 24540 Not Found: /static/admin/js/theme.js
+WARNING 2024-10-28 13:06:13,984 log 12380 15336 Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2024-10-28 13:06:13,986 basehttp 12380 24036 "GET /static/admin/css/changelists.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 13:06:13,986 basehttp 12380 18828 "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 13:06:13,987 basehttp 12380 24540 "GET /static/admin/js/theme.js HTTP/1.1" 404 1690
+WARNING 2024-10-28 13:06:13,988 basehttp 12380 15336 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 13:06:13,991 log 12380 9260 Not Found: /static/admin/css/responsive.css
+WARNING 2024-10-28 13:06:13,994 basehttp 12380 9260 "GET /static/admin/css/responsive.css HTTP/1.1" 404 1690
+INFO 2024-10-28 13:06:13,994 basehttp 12380 5604 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-10-28 13:06:13,995 log 12380 24036 Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+WARNING 2024-10-28 13:06:13,996 log 12380 18828 Not Found: /static/admin/js/jquery.init.js
+WARNING 2024-10-28 13:06:13,997 basehttp 12380 24036 "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 1690
+WARNING 2024-10-28 13:06:13,998 basehttp 12380 18828 "GET /static/admin/js/jquery.init.js HTTP/1.1" 404 1690
+WARNING 2024-10-28 13:06:13,999 log 12380 15336 Not Found: /static/admin/js/admin/RelatedObjectLookups.js
+WARNING 2024-10-28 13:06:14,001 log 12380 24540 Not Found: /static/admin/js/core.js
+WARNING 2024-10-28 13:06:14,002 basehttp 12380 15336 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 1690
+WARNING 2024-10-28 13:06:14,003 log 12380 9260 Not Found: /static/admin/css/changelists.css
+WARNING 2024-10-28 13:06:14,004 basehttp 12380 24540 "GET /static/admin/js/core.js HTTP/1.1" 404 1690
+WARNING 2024-10-28 13:06:14,005 log 12380 5604 Not Found: /static/admin/js/actions.js
+WARNING 2024-10-28 13:06:14,005 basehttp 12380 9260 "GET /static/admin/css/changelists.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 13:06:14,006 basehttp 12380 5604 "GET /static/admin/js/actions.js HTTP/1.1" 404 1690
+INFO 2024-10-28 13:06:14,007 basehttp 12380 24540 - Broken pipe from ('127.0.0.1', 51259)
+WARNING 2024-10-28 13:06:14,008 log 12380 18828 Not Found: /static/admin/js/prepopulate.js
+WARNING 2024-10-28 13:06:14,009 basehttp 12380 18828 "GET /static/admin/js/prepopulate.js HTTP/1.1" 404 1690
+WARNING 2024-10-28 13:06:14,009 log 12380 15336 Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+WARNING 2024-10-28 13:06:14,009 basehttp 12380 15336 "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 1690
+WARNING 2024-10-28 13:06:14,015 log 12380 24036 Not Found: /static/admin/js/urlify.js
+WARNING 2024-10-28 13:06:14,016 basehttp 12380 24036 "GET /static/admin/js/urlify.js HTTP/1.1" 404 1690
+WARNING 2024-10-28 13:06:14,018 log 12380 15336 Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2024-10-28 13:06:14,018 basehttp 12380 15336 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 1690
+WARNING 2024-10-28 13:06:14,024 log 12380 15336 Not Found: /static/admin/js/filters.js
+WARNING 2024-10-28 13:06:14,025 log 12380 24036 Not Found: /static/admin/css/responsive.css
+WARNING 2024-10-28 13:06:14,025 basehttp 12380 15336 "GET /static/admin/js/filters.js HTTP/1.1" 404 1690
+WARNING 2024-10-28 13:06:14,025 basehttp 12380 24036 "GET /static/admin/css/responsive.css HTTP/1.1" 404 1690
+INFO 2024-10-28 13:06:15,814 basehttp 12380 24036 "GET /admin/recipe_app/ HTTP/1.1" 200 7160
+ERROR 2024-10-28 13:06:17,305 log 12380 24036 Internal Server Error: /admin/recipe_app/comment/
+Traceback (most recent call last):
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\models\options.py", line 676, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\contrib\admin\utils.py", line 290, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\contrib\admin\utils.py", line 330, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\models\options.py", line 678, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Comment has no field named 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 346, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 322, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 313, in __init__
+    super().__init__(*items)
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 218, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\contrib\admin\utils.py", line 299, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\contrib\admin\options.py", line 1030, in action_checkbox
+    _("Select this object for an action - {}"), str(obj)
+                                                ^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\recipe_app\models.py", line 64, in __str__
+    return f'Comment by {self.author.username} on {self.recipe.title}'
+                         ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'username'
+ERROR 2024-10-28 13:06:17,308 basehttp 12380 24036 "GET /admin/recipe_app/comment/ HTTP/1.1" 500 1565
+WARNING 2024-10-28 13:06:17,348 log 12380 24036 Not Found: /static/styles.css
+WARNING 2024-10-28 13:06:17,348 basehttp 12380 24036 "GET /static/styles.css HTTP/1.1" 404 1690
+INFO 2024-10-28 13:06:18,691 basehttp 12380 24036 "GET /admin/recipe_app/ HTTP/1.1" 200 7160
+ERROR 2024-10-28 13:08:18,143 log 12380 24036 Internal Server Error: /admin/recipe_app/comment/
+Traceback (most recent call last):
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\models\options.py", line 676, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\contrib\admin\utils.py", line 290, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\contrib\admin\utils.py", line 330, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\db\models\options.py", line 678, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Comment has no field named 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\template\library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 346, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 322, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 313, in __init__
+    super().__init__(*items)
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 218, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\contrib\admin\utils.py", line 299, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\.venv\Lib\site-packages\django\contrib\admin\options.py", line 1030, in action_checkbox
+    _("Select this object for an action - {}"), str(obj)
+                                                ^^^^^^^^
+  File "C:\Users\Nurzhan\PycharmProjects\gb_django_final\recipe_app\models.py", line 64, in __str__
+    return f'Comment by {self.author.username} on {self.recipe.title}'
+                         ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'username'
+ERROR 2024-10-28 13:08:18,146 basehttp 12380 24036 "GET /admin/recipe_app/comment/ HTTP/1.1" 500 1565
+WARNING 2024-10-28 13:08:18,214 log 12380 24036 Not Found: /static/styles.css
+WARNING 2024-10-28 13:08:18,215 basehttp 12380 24036 "GET /static/styles.css HTTP/1.1" 404 1690
+INFO 2024-10-28 13:08:20,349 basehttp 12380 24036 "GET /admin/recipe_app/ HTTP/1.1" 200 7160
+INFO 2024-10-28 17:05:22,038 autoreload 12380 15640 C:\Users\Nurzhan\PycharmProjects\gb_django_final\recipe_app\models.py changed, reloading.
+INFO 2024-10-28 17:05:23,209 autoreload 6056 20360 Watching for file changes with StatReloader
+INFO 2024-10-28 17:05:37,236 basehttp 6056 27584 "GET /admin/recipe_app/comment/ HTTP/1.1" 200 11580
+WARNING 2024-10-28 17:05:37,298 log 6056 27584 Not Found: /static/admin/css/base.css
+WARNING 2024-10-28 17:05:37,299 basehttp 6056 27584 "GET /static/admin/css/base.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:37,304 log 6056 24700 Not Found: /static/admin/css/dark_mode.css
+WARNING 2024-10-28 17:05:37,306 basehttp 6056 24700 "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:37,306 log 6056 17508 Not Found: /static/admin/js/theme.js
+WARNING 2024-10-28 17:05:37,310 basehttp 6056 17508 "GET /static/admin/js/theme.js HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:37,313 log 6056 27584 Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2024-10-28 17:05:37,316 log 6056 176 Not Found: /static/admin/css/changelists.css
+WARNING 2024-10-28 17:05:37,316 basehttp 6056 27584 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:37,316 log 6056 25452 Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+WARNING 2024-10-28 17:05:37,319 basehttp 6056 25452 "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:37,319 basehttp 6056 176 "GET /static/admin/css/changelists.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:37,321 log 6056 24700 Not Found: /static/admin/css/responsive.css
+WARNING 2024-10-28 17:05:37,324 basehttp 6056 24700 "GET /static/admin/css/responsive.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:37,327 log 6056 17508 Not Found: /static/admin/js/core.js
+WARNING 2024-10-28 17:05:37,329 basehttp 6056 17508 "GET /static/admin/js/core.js HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:37,333 log 6056 27584 Not Found: /static/admin/js/jquery.init.js
+INFO 2024-10-28 17:05:37,334 basehttp 6056 11256 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-10-28 17:05:37,335 log 6056 25452 Not Found: /static/admin/js/actions.js
+WARNING 2024-10-28 17:05:37,335 log 6056 176 Not Found: /static/admin/js/admin/RelatedObjectLookups.js
+WARNING 2024-10-28 17:05:37,337 basehttp 6056 27584 "GET /static/admin/js/jquery.init.js HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:37,339 basehttp 6056 176 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:37,339 basehttp 6056 25452 "GET /static/admin/js/actions.js HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:37,343 log 6056 24700 Not Found: /static/admin/js/urlify.js
+WARNING 2024-10-28 17:05:37,344 log 6056 17508 Not Found: /static/admin/js/prepopulate.js
+WARNING 2024-10-28 17:05:37,346 log 6056 11256 Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+WARNING 2024-10-28 17:05:37,346 basehttp 6056 17508 "GET /static/admin/js/prepopulate.js HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:37,346 basehttp 6056 24700 "GET /static/admin/js/urlify.js HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:37,347 basehttp 6056 11256 "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:37,374 log 6056 11256 Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2024-10-28 17:05:37,375 log 6056 24700 Not Found: /static/admin/css/responsive.css
+WARNING 2024-10-28 17:05:37,375 log 6056 17508 Not Found: /static/admin/js/filters.js
+WARNING 2024-10-28 17:05:37,376 basehttp 6056 11256 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:37,376 basehttp 6056 24700 "GET /static/admin/css/responsive.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:37,376 basehttp 6056 17508 "GET /static/admin/js/filters.js HTTP/1.1" 404 1690
+INFO 2024-10-28 17:05:48,084 basehttp 6056 17508 "POST /admin/recipe_app/comment/ HTTP/1.1" 200 9836
+WARNING 2024-10-28 17:05:48,162 log 6056 17508 Not Found: /static/admin/css/base.css
+WARNING 2024-10-28 17:05:48,164 log 6056 24700 Not Found: /static/admin/css/dark_mode.css
+WARNING 2024-10-28 17:05:48,164 log 6056 27584 Not Found: /static/admin/js/jquery.init.js
+WARNING 2024-10-28 17:05:48,164 basehttp 6056 17508 "GET /static/admin/css/base.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:48,165 log 6056 25452 Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2024-10-28 17:05:48,165 basehttp 6056 24700 "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:48,166 log 6056 176 Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+WARNING 2024-10-28 17:05:48,167 basehttp 6056 27584 "GET /static/admin/js/jquery.init.js HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:48,167 log 6056 11256 Not Found: /static/admin/js/theme.js
+WARNING 2024-10-28 17:05:48,167 basehttp 6056 25452 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:48,169 basehttp 6056 176 "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:48,169 basehttp 6056 11256 "GET /static/admin/js/theme.js HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:48,174 log 6056 17508 Not Found: /static/admin/css/responsive.css
+WARNING 2024-10-28 17:05:48,175 log 6056 27584 Not Found: /static/admin/js/admin/RelatedObjectLookups.js
+WARNING 2024-10-28 17:05:48,175 basehttp 6056 17508 "GET /static/admin/css/responsive.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:48,178 basehttp 6056 27584 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:48,179 log 6056 25452 Not Found: /static/admin/js/actions.js
+WARNING 2024-10-28 17:05:48,180 log 6056 24700 Not Found: /static/admin/js/core.js
+WARNING 2024-10-28 17:05:48,181 log 6056 176 Not Found: /static/admin/js/urlify.js
+WARNING 2024-10-28 17:05:48,183 log 6056 11256 Not Found: /static/admin/js/prepopulate.js
+WARNING 2024-10-28 17:05:48,183 basehttp 6056 25452 "GET /static/admin/js/actions.js HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:48,183 basehttp 6056 24700 "GET /static/admin/js/core.js HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:48,184 basehttp 6056 176 "GET /static/admin/js/urlify.js HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:48,184 basehttp 6056 11256 "GET /static/admin/js/prepopulate.js HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:48,186 log 6056 17508 Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+WARNING 2024-10-28 17:05:48,186 log 6056 27584 Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2024-10-28 17:05:48,187 basehttp 6056 17508 "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:48,187 basehttp 6056 27584 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:48,198 log 6056 17508 Not Found: /static/admin/js/cancel.js
+WARNING 2024-10-28 17:05:48,199 log 6056 11256 Not Found: /static/admin/css/responsive.css
+WARNING 2024-10-28 17:05:48,200 basehttp 6056 17508 "GET /static/admin/js/cancel.js HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:48,200 basehttp 6056 11256 "GET /static/admin/css/responsive.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:48,203 log 6056 27584 Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2024-10-28 17:05:48,203 basehttp 6056 27584 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 1690
+INFO 2024-10-28 17:05:54,292 basehttp 6056 27584 "POST /admin/recipe_app/comment/ HTTP/1.1" 302 0
+INFO 2024-10-28 17:05:54,304 basehttp 6056 27584 "GET /admin/recipe_app/comment/ HTTP/1.1" 200 9341
+WARNING 2024-10-28 17:05:54,356 log 6056 27584 Not Found: /static/admin/css/base.css
+WARNING 2024-10-28 17:05:54,358 basehttp 6056 27584 "GET /static/admin/css/base.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:54,358 log 6056 17508 Not Found: /static/admin/js/theme.js
+WARNING 2024-10-28 17:05:54,359 log 6056 11256 Not Found: /static/admin/css/dark_mode.css
+WARNING 2024-10-28 17:05:54,361 log 6056 176 Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2024-10-28 17:05:54,362 basehttp 6056 11256 "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:54,363 log 6056 24700 Not Found: /static/admin/css/changelists.css
+WARNING 2024-10-28 17:05:54,363 basehttp 6056 17508 "GET /static/admin/js/theme.js HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:54,363 basehttp 6056 176 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 1690
+INFO 2024-10-28 17:05:54,363 basehttp 6056 25452 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-10-28 17:05:54,365 basehttp 6056 24700 "GET /static/admin/css/changelists.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:54,370 log 6056 11256 Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+WARNING 2024-10-28 17:05:54,372 log 6056 27584 Not Found: /static/admin/css/responsive.css
+WARNING 2024-10-28 17:05:54,373 log 6056 176 Not Found: /static/admin/js/core.js
+WARNING 2024-10-28 17:05:54,374 log 6056 24700 Not Found: /static/admin/js/actions.js
+WARNING 2024-10-28 17:05:54,374 log 6056 17508 Not Found: /static/admin/js/jquery.init.js
+WARNING 2024-10-28 17:05:54,374 basehttp 6056 11256 "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:54,375 basehttp 6056 27584 "GET /static/admin/css/responsive.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:54,376 basehttp 6056 176 "GET /static/admin/js/core.js HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:54,377 basehttp 6056 24700 "GET /static/admin/js/actions.js HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:54,377 basehttp 6056 17508 "GET /static/admin/js/jquery.init.js HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:54,378 log 6056 25452 Not Found: /static/admin/js/admin/RelatedObjectLookups.js
+INFO 2024-10-28 17:05:54,378 basehttp 6056 11256 - Broken pipe from ('127.0.0.1', 52608)
+WARNING 2024-10-28 17:05:54,379 basehttp 6056 25452 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:54,382 log 6056 26948 Not Found: /static/admin/js/urlify.js
+WARNING 2024-10-28 17:05:54,382 basehttp 6056 26948 "GET /static/admin/js/urlify.js HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:54,384 log 6056 27584 Not Found: /static/admin/js/prepopulate.js
+WARNING 2024-10-28 17:05:54,384 log 6056 176 Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+WARNING 2024-10-28 17:05:54,384 basehttp 6056 27584 "GET /static/admin/js/prepopulate.js HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:54,384 basehttp 6056 176 "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:54,394 log 6056 176 Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2024-10-28 17:05:54,394 log 6056 26948 Not Found: /static/admin/css/responsive.css
+WARNING 2024-10-28 17:05:54,395 basehttp 6056 26948 "GET /static/admin/css/responsive.css HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:54,395 basehttp 6056 176 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 1690
+WARNING 2024-10-28 17:05:54,409 log 6056 27584 Not Found: /static/admin/js/filters.js
+WARNING 2024-10-28 17:05:54,410 basehttp 6056 27584 "GET /static/admin/js/filters.js HTTP/1.1" 404 1690

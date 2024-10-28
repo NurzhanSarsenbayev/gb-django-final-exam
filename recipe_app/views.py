@@ -80,6 +80,28 @@ class RecipeDetail(DetailView):
   template_name = 'recipe_app/recipe_detail.html'
   context_object_name = 'recipe'
 
+  def get_context_data(self, **kwargs):
+    context = super().get_context_data(**kwargs)
+    # Add comments and the comment form to the context
+    context['comments'] = self.object.comments.all()
+    context['form'] = CommentForm()
+    return context
+
+  def post(self, request, *args, **kwargs):
+    # Use get_object() to retrieve the recipe for adding the comment
+    self.object = self.get_object()
+    form = CommentForm(request.POST)
+
+    if form.is_valid():
+      comment = form.save(commit=False)
+      comment.recipe = self.object  # Associate the comment with the recipe
+      comment.author = self.request.user  # Associate the comment with the logged-in user
+      comment.save()
+      return redirect('recipe_detail', pk=self.object.pk)
+
+  # If the form is not valid, re-render with errors
+    context = self.get_context_data(form=form)
+    return self.render_to_response(context)
 
 class RecipeCreate(LoginRequiredMixin, CreateView):  # Ensure user is logged in
   model = Recipe
