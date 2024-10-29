@@ -20,6 +20,9 @@ urlpatterns = [
     path('categories/<int:pk>/', views.CategoryDetail.as_view(), name='category_detail'),
     path('wrong_user_error/', views.wrong_user_error, name='wrong_user_error'),
     #path('test-error/', views.test_error_view, name='test_error'),
+    path('recipe/<int:recipe_id>/like/', views.toggle_like, name='toggle_like'),
+    path('recipe/<int:recipe_id>/favorite/', views.toggle_favorite, name='toggle_favorite'),
+
 ]
 
 if settings.DEBUG:

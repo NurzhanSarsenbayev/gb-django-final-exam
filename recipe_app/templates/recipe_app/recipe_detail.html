@@ -36,6 +36,30 @@
 
         <p><strong>Author:</strong> {{ recipe.author.username }}</p>
         <p><strong>Published on:</strong> {{ recipe.created_at|date:"F j, Y" }}</p>
+        <p>Likes: {{ recipe.like_count }}</p>
+        <p>Favorites: {{ recipe.favorite_count }}</p>
+
+<form action="{% url 'toggle_like' recipe.id %}" method="post">
+    {% csrf_token %}
+    {% if has_liked %}
+
+        <button type="submit">Unlike</button>
+    {% else %}
+        <button type="submit">Like</button>
+        {{ recipe.likes.all }}
+    {{ request.user }}
+    {% endif %}
+</form>
+
+<form action="{% url 'toggle_favorite' recipe.id %}" method="post">
+    {% csrf_token %}
+    {% if has_favorited %}
+        <button type="submit">Unfavorite</button>
+    {% else %}
+        <button type="submit">Favorite</button>
+    {% endif %}
+</form>
+
     <h2>Comments</h2>
 <div class="comments">
     {% for comment in comments %}

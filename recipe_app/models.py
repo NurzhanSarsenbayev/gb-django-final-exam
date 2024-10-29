@@ -31,6 +31,12 @@ class Recipe(models.Model):
     def get_absolute_url(self):
         return reverse('recipe_detail', args=[self.pk])
 
+    def like_count(self):
+        return self.likes.count()
+
+    def favorite_count(self):
+        return self.favorites.count()
+
 class Category(models.Model):
     name = models.CharField(max_length=100, unique=True,)
 
@@ -62,6 +68,29 @@ class Comment(models.Model):
 
     def __str__(self):
         return f'Comment by {self.author.username if self.author else "Unknown"} on {self.recipe.title}'
+
+class Like(models.Model):
+    author = models.ForeignKey(settings.AUTH_USER_MODEL,on_delete=models.CASCADE,related_name='likes',null=True, blank=True)
+    recipe = models.ForeignKey(Recipe,on_delete=models.CASCADE,related_name='likes')
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        unique_together = ('author', 'recipe')
+    def __str__(self):
+        return f'{self.author} like {self.recipe}'
+
+
+class Favorite(models.Model):
+    author = models.ForeignKey(settings.AUTH_USER_MODEL,on_delete=models.CASCADE,related_name='favorites',null=True, blank=True)
+    recipe = models.ForeignKey(Recipe,on_delete=models.CASCADE,related_name='favorites')
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        unique_together = ('author', 'recipe')
+    def __str__(self):
+        return f'{self.author} favorite like {self.recipe}'
+
+
 '''
 TODO At this point, I don't believe this model is useful. 
 I tried various versions (both with ForeignKey and M2M relations),

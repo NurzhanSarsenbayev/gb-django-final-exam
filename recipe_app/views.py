@@ -3,7 +3,7 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http import HttpResponse
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.urls import reverse_lazy
 from .models import Recipe,Ingredient,Category
 from .forms import *
@@ -85,6 +85,11 @@ class RecipeDetail(DetailView):
     # Add comments and the comment form to the context
     context['comments'] = self.object.comments.all()
     context['form'] = CommentForm()
+    # Check if the current user has liked or favorited the recipe
+    user = self.request.user
+    context['has_liked'] = Like.objects.filter(author=user, recipe=self.object).exists()
+    context['has_favorited'] = Favorite.objects.filter(author=user, recipe=self.object).exists()
+
     return context
 
   def post(self, request, *args, **kwargs):
@@ -97,9 +102,12 @@ class RecipeDetail(DetailView):
       comment.recipe = self.object  # Associate the comment with the recipe
       comment.author = self.request.user  # Associate the comment with the logged-in user
       comment.save()
-      return redirect('recipe_detail', pk=self.object.pk)
+      # Update the context with the current likes and favorites
+      context = self.get_context_data(form=form)
+      context['recipe'] = self.object  # Re-fetch the recipe object
+      return self.render_to_response(context)
 
-  # If the form is not valid, re-render with errors
+      # If the form is not valid, re-render with errors
     context = self.get_context_data(form=form)
     return self.render_to_response(context)
 
@@ -229,6 +237,23 @@ class CategoryDelete(DeleteView):
   model = Category
   template_name = 'recipe_app/category_delete_form.html'
   success_url = reverse_lazy('category_list')
+
+@login_required
+def toggle_like(request, recipe_id):
+    recipe = get_object_or_404(Recipe, id=recipe_id)
+    like, created = Like.objects.get_or_create(author=request.user, recipe=recipe)
+    if not created:
+        like.delete()  # Remove like if it already exists
+    return redirect('recipe_detail', pk=recipe.pk)
+
+@login_required
+def toggle_favorite(request, recipe_id):
+    recipe = get_object_or_404(Recipe, id=recipe_id)
+    favorite, created = Favorite.objects.get_or_create(author=request.user, recipe=recipe)
+    if not created:
+        favorite.delete()  # Remove favorite if it already exists
+    return redirect('recipe_detail', pk=recipe.pk)
+
 
 # class RecipeCategoryList(ListView):
 #   model = RecipeCategory

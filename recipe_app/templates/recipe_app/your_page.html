@@ -1,0 +1,11 @@
+{% extends './base.html' %}
+
+TODO SUBMITTED RECIPES, LIST OF COMMENTS, LIST OF FAVOURITES
+
+{% block content %}
+                    <li>Welcome, {{ user.username }}!</li>
+                    <li><a href="{% url 'recipe_list' %}">All Recipes</a></li>
+                    <li><a href="{% url 'category_list' %}">All Categories</a></li>
+                    <li><a href="{% url 'logout' %}">Logout</a></li>
+
+{% endblock %}
