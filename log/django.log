@@ -2407,3 +2407,133 @@ WARNING 2024-10-29 14:29:07,907 log 28316 26616 Not Found: /static/styles.css
 WARNING 2024-10-29 14:29:07,907 log 28316 10704 Not Found: /media/recipe_images/cin.webp
 WARNING 2024-10-29 14:29:07,908 basehttp 28316 26616 "GET /static/styles.css HTTP/1.1" 404 1690
 WARNING 2024-10-29 14:29:07,908 basehttp 28316 10704 "GET /media/recipe_images/cin.webp HTTP/1.1" 404 1690
+INFO 2024-10-30 15:01:28,499 autoreload 2368 23212 Watching for file changes with StatReloader
+INFO 2024-10-30 15:01:30,772 basehttp 2368 5940 "GET / HTTP/1.1" 200 4164
+WARNING 2024-10-30 15:01:31,006 log 2368 5940 Not Found: /static/styles.css
+WARNING 2024-10-30 15:01:31,007 basehttp 2368 5940 "GET /static/styles.css HTTP/1.1" 404 1690
+WARNING 2024-10-30 15:01:31,017 log 2368 22548 Not Found: /media/recipe_images/cin.webp
+WARNING 2024-10-30 15:01:31,018 basehttp 2368 22548 "GET /media/recipe_images/cin.webp HTTP/1.1" 404 1690
+WARNING 2024-10-30 15:01:31,028 log 2368 5940 Not Found: /media/recipe_images/salad.jpg
+WARNING 2024-10-30 15:01:31,030 basehttp 2368 5940 "GET /media/recipe_images/salad.jpg HTTP/1.1" 404 1690
+WARNING 2024-10-30 15:01:31,031 log 2368 22752 Not Found: /media/recipe_images/apple_jNWo8qJ.webp
+WARNING 2024-10-30 15:01:31,031 log 2368 22548 Not Found: /media/recipe_images/french1.jpg
+WARNING 2024-10-30 15:01:31,032 basehttp 2368 22752 "GET /media/recipe_images/apple_jNWo8qJ.webp HTTP/1.1" 404 1690
+WARNING 2024-10-30 15:01:31,032 basehttp 2368 22548 "GET /media/recipe_images/french1.jpg HTTP/1.1" 404 1690
+WARNING 2024-10-30 15:01:31,093 log 2368 22548 Not Found: /favicon.ico
+WARNING 2024-10-30 15:01:31,094 basehttp 2368 22548 "GET /favicon.ico HTTP/1.1" 404 1690
+INFO 2024-10-30 15:02:19,521 basehttp 2368 22548 "GET / HTTP/1.1" 200 4207
+WARNING 2024-10-30 15:02:19,565 log 2368 22548 Not Found: /static/styles.css
+WARNING 2024-10-30 15:02:19,566 log 2368 5940 Not Found: /media/recipe_images/jala.jpg
+WARNING 2024-10-30 15:02:19,567 log 2368 22752 Not Found: /media/recipe_images/marga.webp
+WARNING 2024-10-30 15:02:19,568 basehttp 2368 22548 "GET /static/styles.css HTTP/1.1" 404 1753
+WARNING 2024-10-30 15:02:19,568 basehttp 2368 5940 "GET /media/recipe_images/jala.jpg HTTP/1.1" 404 1753
+WARNING 2024-10-30 15:02:19,569 log 2368 1520 Not Found: /media/recipe_images/french1.jpg
+WARNING 2024-10-30 15:02:19,571 log 2368 7880 Not Found: /media/recipe_images/apple_jNWo8qJ.webp
+WARNING 2024-10-30 15:02:19,571 basehttp 2368 22752 "GET /media/recipe_images/marga.webp HTTP/1.1" 404 1753
+WARNING 2024-10-30 15:02:19,572 log 2368 2120 Not Found: /media/recipe_images/cin.webp
+WARNING 2024-10-30 15:02:19,572 basehttp 2368 1520 "GET /media/recipe_images/french1.jpg HTTP/1.1" 404 1753
+WARNING 2024-10-30 15:02:19,572 basehttp 2368 7880 "GET /media/recipe_images/apple_jNWo8qJ.webp HTTP/1.1" 404 1753
+WARNING 2024-10-30 15:02:19,573 basehttp 2368 2120 "GET /media/recipe_images/cin.webp HTTP/1.1" 404 1753
+INFO 2024-10-30 15:02:20,969 basehttp 2368 2120 "GET /profile/ HTTP/1.1" 200 5543
+WARNING 2024-10-30 15:02:21,010 log 2368 2120 Not Found: /static/styles.css
+WARNING 2024-10-30 15:02:21,011 basehttp 2368 2120 "GET /static/styles.css HTTP/1.1" 404 1753
+INFO 2024-10-30 15:02:32,930 basehttp 2368 2120 "GET /recipes/10/ HTTP/1.1" 200 4050
+WARNING 2024-10-30 15:02:32,973 log 2368 2120 Not Found: /static/styles.css
+WARNING 2024-10-30 15:02:32,974 log 2368 7880 Not Found: /media/recipe_images/marga.webp
+WARNING 2024-10-30 15:02:32,975 basehttp 2368 2120 "GET /static/styles.css HTTP/1.1" 404 1753
+WARNING 2024-10-30 15:02:32,975 basehttp 2368 7880 "GET /media/recipe_images/marga.webp HTTP/1.1" 404 1753
+INFO 2024-10-30 15:02:44,176 basehttp 2368 7880 "POST /recipes/10/ HTTP/1.1" 200 4168
+WARNING 2024-10-30 15:02:44,223 log 2368 7880 Not Found: /static/styles.css
+WARNING 2024-10-30 15:02:44,223 log 2368 2120 Not Found: /media/recipe_images/marga.webp
+WARNING 2024-10-30 15:02:44,224 basehttp 2368 7880 "GET /static/styles.css HTTP/1.1" 404 1753
+WARNING 2024-10-30 15:02:44,224 basehttp 2368 2120 "GET /media/recipe_images/marga.webp HTTP/1.1" 404 1753
+INFO 2024-10-30 15:02:48,017 basehttp 2368 2120 "GET /profile/ HTTP/1.1" 200 5688
+WARNING 2024-10-30 15:02:48,058 log 2368 2120 Not Found: /static/styles.css
+WARNING 2024-10-30 15:02:48,058 basehttp 2368 2120 "GET /static/styles.css HTTP/1.1" 404 1753
+INFO 2024-10-30 15:03:57,035 basehttp 2368 2120 "GET /profile/ HTTP/1.1" 200 5715
+WARNING 2024-10-30 15:03:57,072 log 2368 2120 Not Found: /static/styles.css
+WARNING 2024-10-30 15:03:57,073 basehttp 2368 2120 "GET /static/styles.css HTTP/1.1" 404 1753
+INFO 2024-10-31 09:30:24,692 autoreload 14756 5888 Watching for file changes with StatReloader
+INFO 2024-10-31 09:30:27,664 basehttp 14756 21784 "GET / HTTP/1.1" 200 4180
+WARNING 2024-10-31 09:30:27,839 log 14756 21784 Not Found: /static/styles.css
+WARNING 2024-10-31 09:30:27,845 log 14756 12192 Not Found: /media/recipe_images/cake.webp
+WARNING 2024-10-31 09:30:27,851 basehttp 14756 21784 "GET /static/styles.css HTTP/1.1" 404 1753
+WARNING 2024-10-31 09:30:27,852 basehttp 14756 12192 "GET /media/recipe_images/cake.webp HTTP/1.1" 404 1753
+WARNING 2024-10-31 09:30:27,855 log 14756 2852 Not Found: /media/recipe_images/apple_jNWo8qJ.webp
+WARNING 2024-10-31 09:30:27,858 log 14756 6060 Not Found: /media/recipe_images/salad.jpg
+WARNING 2024-10-31 09:30:27,860 log 14756 15200 Not Found: /media/recipe_images/jala.jpg
+WARNING 2024-10-31 09:30:27,862 basehttp 14756 2852 "GET /media/recipe_images/apple_jNWo8qJ.webp HTTP/1.1" 404 1753
+WARNING 2024-10-31 09:30:27,862 basehttp 14756 6060 "GET /media/recipe_images/salad.jpg HTTP/1.1" 404 1753
+WARNING 2024-10-31 09:30:27,862 log 14756 7952 Not Found: /media/recipe_images/cin.webp
+WARNING 2024-10-31 09:30:27,863 basehttp 14756 15200 "GET /media/recipe_images/jala.jpg HTTP/1.1" 404 1753
+WARNING 2024-10-31 09:30:27,864 basehttp 14756 7952 "GET /media/recipe_images/cin.webp HTTP/1.1" 404 1753
+WARNING 2024-10-31 09:30:28,017 log 14756 7952 Not Found: /favicon.ico
+WARNING 2024-10-31 09:30:28,017 basehttp 14756 7952 "GET /favicon.ico HTTP/1.1" 404 1753
+INFO 2024-10-31 09:30:33,690 basehttp 14756 7952 "GET /recipes/11/ HTTP/1.1" 200 3970
+WARNING 2024-10-31 09:30:33,744 log 14756 7952 Not Found: /static/styles.css
+WARNING 2024-10-31 09:30:33,745 basehttp 14756 7952 "GET /static/styles.css HTTP/1.1" 404 1753
+WARNING 2024-10-31 09:30:33,758 log 14756 15200 Not Found: /media/recipe_images/cake.webp
+WARNING 2024-10-31 09:30:33,759 basehttp 14756 15200 "GET /media/recipe_images/cake.webp HTTP/1.1" 404 1753
+INFO 2024-10-31 09:30:45,965 basehttp 14756 15200 "POST /recipe/11/like/ HTTP/1.1" 302 0
+INFO 2024-10-31 09:30:45,976 basehttp 14756 15200 "GET /recipes/11/ HTTP/1.1" 200 4007
+WARNING 2024-10-31 09:30:46,016 log 14756 7952 Not Found: /media/recipe_images/cake.webp
+WARNING 2024-10-31 09:30:46,017 log 14756 15200 Not Found: /static/styles.css
+WARNING 2024-10-31 09:30:46,017 basehttp 14756 15200 "GET /static/styles.css HTTP/1.1" 404 1753
+WARNING 2024-10-31 09:30:46,017 basehttp 14756 7952 "GET /media/recipe_images/cake.webp HTTP/1.1" 404 1753
+INFO 2024-10-31 09:30:52,119 basehttp 14756 15200 "POST /recipe/11/favorite/ HTTP/1.1" 302 0
+INFO 2024-10-31 09:30:52,134 basehttp 14756 15200 "GET /recipes/11/ HTTP/1.1" 200 4009
+WARNING 2024-10-31 09:30:52,241 log 14756 15200 Not Found: /static/styles.css
+WARNING 2024-10-31 09:30:52,242 basehttp 14756 15200 "GET /static/styles.css HTTP/1.1" 404 1753
+WARNING 2024-10-31 09:30:52,248 log 14756 7952 Not Found: /media/recipe_images/cake.webp
+WARNING 2024-10-31 09:30:52,248 basehttp 14756 7952 "GET /media/recipe_images/cake.webp HTTP/1.1" 404 1753
+INFO 2024-10-31 09:31:07,595 basehttp 14756 7952 "POST /recipes/11/ HTTP/1.1" 200 4116
+WARNING 2024-10-31 09:31:07,648 log 14756 7952 Not Found: /static/styles.css
+WARNING 2024-10-31 09:31:07,649 log 14756 15200 Not Found: /media/recipe_images/cake.webp
+WARNING 2024-10-31 09:31:07,649 basehttp 14756 7952 "GET /static/styles.css HTTP/1.1" 404 1753
+WARNING 2024-10-31 09:31:07,649 basehttp 14756 15200 "GET /media/recipe_images/cake.webp HTTP/1.1" 404 1753
+INFO 2024-10-31 09:31:25,304 basehttp 14756 15200 "GET /profile/ HTTP/1.1" 200 5924
+WARNING 2024-10-31 09:31:25,361 log 14756 15200 Not Found: /static/styles.css
+WARNING 2024-10-31 09:31:25,361 basehttp 14756 15200 "GET /static/styles.css HTTP/1.1" 404 1753
+INFO 2024-11-13 08:22:43,327 autoreload 22980 26456 Watching for file changes with StatReloader
+INFO 2024-11-13 08:22:45,438 basehttp 22980 15556 "GET / HTTP/1.1" 302 0
+INFO 2024-11-13 08:22:45,514 basehttp 22980 15556 "GET /login/?next=/ HTTP/1.1" 200 2086
+WARNING 2024-11-13 08:22:45,744 log 22980 15556 Not Found: /static/styles.css
+WARNING 2024-11-13 08:22:45,745 basehttp 22980 15556 "GET /static/styles.css HTTP/1.1" 404 1565
+WARNING 2024-11-13 08:22:45,979 log 22980 15556 Not Found: /favicon.ico
+WARNING 2024-11-13 08:22:45,983 basehttp 22980 15556 "GET /favicon.ico HTTP/1.1" 404 1565
+INFO 2024-11-13 08:22:48,573 basehttp 22980 15556 "POST /login/?next=/ HTTP/1.1" 302 0
+INFO 2024-11-13 08:22:48,583 basehttp 22980 15556 "GET / HTTP/1.1" 200 4209
+WARNING 2024-11-13 08:22:48,638 log 22980 15556 Not Found: /static/styles.css
+WARNING 2024-11-13 08:22:48,639 log 22980 17924 Not Found: /media/recipe_images/apple_jNWo8qJ.webp
+WARNING 2024-11-13 08:22:48,641 basehttp 22980 15556 "GET /static/styles.css HTTP/1.1" 404 1755
+WARNING 2024-11-13 08:22:48,643 log 22980 904 Not Found: /media/recipe_images/cin.webp
+WARNING 2024-11-13 08:22:48,645 log 22980 20916 Not Found: /media/recipe_images/french1.jpg
+WARNING 2024-11-13 08:22:48,646 basehttp 22980 17924 "GET /media/recipe_images/apple_jNWo8qJ.webp HTTP/1.1" 404 1755
+WARNING 2024-11-13 08:22:48,646 basehttp 22980 904 "GET /media/recipe_images/cin.webp HTTP/1.1" 404 1755
+WARNING 2024-11-13 08:22:48,647 basehttp 22980 20916 "GET /media/recipe_images/french1.jpg HTTP/1.1" 404 1755
+WARNING 2024-11-13 08:22:48,648 log 22980 21796 Not Found: /media/recipe_images/marga.webp
+WARNING 2024-11-13 08:22:48,649 log 22980 12156 Not Found: /media/recipe_images/jala.jpg
+WARNING 2024-11-13 08:22:48,650 basehttp 22980 21796 "GET /media/recipe_images/marga.webp HTTP/1.1" 404 1755
+WARNING 2024-11-13 08:22:48,650 basehttp 22980 12156 "GET /media/recipe_images/jala.jpg HTTP/1.1" 404 1755
+INFO 2024-11-13 08:22:55,115 basehttp 22980 12156 "GET /profile/ HTTP/1.1" 200 2034
+WARNING 2024-11-13 08:22:55,168 log 22980 12156 Not Found: /static/styles.css
+WARNING 2024-11-13 08:22:55,169 basehttp 22980 12156 "GET /static/styles.css HTTP/1.1" 404 1755
+INFO 2024-11-13 08:23:02,729 basehttp 22980 12156 "GET /recipes/ HTTP/1.1" 200 5066
+WARNING 2024-11-13 08:23:02,781 log 22980 12156 Not Found: /static/styles.css
+WARNING 2024-11-13 08:23:02,782 basehttp 22980 12156 "GET /static/styles.css HTTP/1.1" 404 1755
+INFO 2024-11-13 08:23:05,556 basehttp 22980 12156 "GET /categories/ HTTP/1.1" 200 2946
+WARNING 2024-11-13 08:23:05,604 log 22980 12156 Not Found: /static/styles.css
+WARNING 2024-11-13 08:23:05,606 basehttp 22980 12156 "GET /static/styles.css HTTP/1.1" 404 1755
+INFO 2024-11-13 08:23:08,954 basehttp 22980 12156 "GET / HTTP/1.1" 200 4213
+WARNING 2024-11-13 08:23:09,019 log 22980 904 Not Found: /media/recipe_images/salad.jpg
+WARNING 2024-11-13 08:23:09,020 log 22980 21796 Not Found: /media/recipe_images/french1.jpg
+WARNING 2024-11-13 08:23:09,023 log 22980 17924 Not Found: /media/recipe_images/cin.webp
+WARNING 2024-11-13 08:23:09,023 basehttp 22980 904 "GET /media/recipe_images/salad.jpg HTTP/1.1" 404 1755
+WARNING 2024-11-13 08:23:09,024 log 22980 20916 Not Found: /media/recipe_images/jala.jpg
+WARNING 2024-11-13 08:23:09,024 log 22980 15556 Not Found: /media/recipe_images/apple_jNWo8qJ.webp
+WARNING 2024-11-13 08:23:09,024 basehttp 22980 21796 "GET /media/recipe_images/french1.jpg HTTP/1.1" 404 1755
+WARNING 2024-11-13 08:23:09,025 log 22980 12156 Not Found: /static/styles.css
+WARNING 2024-11-13 08:23:09,025 basehttp 22980 17924 "GET /media/recipe_images/cin.webp HTTP/1.1" 404 1755
+WARNING 2024-11-13 08:23:09,026 basehttp 22980 20916 "GET /media/recipe_images/jala.jpg HTTP/1.1" 404 1755
+WARNING 2024-11-13 08:23:09,026 basehttp 22980 15556 "GET /media/recipe_images/apple_jNWo8qJ.webp HTTP/1.1" 404 1755
+WARNING 2024-11-13 08:23:09,026 basehttp 22980 12156 "GET /static/styles.css HTTP/1.1" 404 1755

@@ -55,7 +55,7 @@ def home(request):
 
 def custom_error_view(request, status):
   if status == 404:
-    template_name = '500.html'
+    template_name = '404.html'
   elif status == 500:
     template_name = '500.html'
   else:
@@ -65,11 +65,6 @@ def custom_error_view(request, status):
 
 def wrong_user_error(request):
   return render(request, 'recipe_app/wrong_user_error.html', status=403)
-
-
-# Tested for error screen
-#def test_error_view(request):
-  #raise Exception("This is a test exception for 500 error handling.")
 
 class RecipeList(ListView):
   model = Recipe
@@ -190,24 +185,6 @@ class RecipeDelete(DeleteView):
       return redirect('wrong_user_error')  # Redirect to your custom error page
     return super().dispatch(request, *args, **kwargs)
 
-class IngredientList(ListView):
-  model = Ingredient
-  template_name = 'recipe_app/ingredient_list.html'
-
-class IngredientCreate(CreateView):
-  model = Ingredient
-  template_name = 'recipe_app/ingredient_create_form.html'
-  fields = '__all__'
-
-class IngredientUpdate(UpdateView):
-  model = Ingredient
-  template_name = 'recipe_app/ingredient_update_form.html'
-  fields = '__all__'
-
-class IngredientDelete(DeleteView):
-  model = Ingredient
-  template_name = 'recipe_app/ingredient_delete_form.html'
-  success_url = reverse_lazy('ingredient_list')
 
 class CategoryList(ListView):
     model = Category
@@ -254,6 +231,46 @@ def toggle_favorite(request, recipe_id):
         favorite.delete()  # Remove favorite if it already exists
     return redirect('recipe_detail', pk=recipe.pk)
 
+@login_required
+def user_profile(request):
+    user = request.user
+    # Get all recipes submitted by the user
+    user_recipes = Recipe.objects.filter(author=user)
+    # Get all recipes the user has liked
+    liked_recipes = Recipe.objects.filter(likes__author=user)
+    # Get all recipes the user has favorited
+    favorited_recipes = Recipe.objects.filter(favorites__author=user)
+    # Get all comments made by the user
+    user_comments = Comment.objects.filter(author=user)
+
+    context = {
+        'user_recipes': user_recipes,
+        'liked_recipes': liked_recipes,
+        'favorited_recipes': favorited_recipes,
+        'user_comments': user_comments,
+    }
+    return render(request, 'recipe_app/user_profile.html', context)
+
+
+# TODO add functionality for ingredients (if applicable)
+# class IngredientList(ListView):
+#   model = Ingredient
+#   template_name = 'recipe_app/ingredient_list.html'
+#
+# class IngredientCreate(CreateView):
+#   model = Ingredient
+#   template_name = 'recipe_app/ingredient_create_form.html'
+#   fields = '__all__'
+#
+# class IngredientUpdate(UpdateView):
+#   model = Ingredient
+#   template_name = 'recipe_app/ingredient_update_form.html'
+#   fields = '__all__'
+#
+# class IngredientDelete(DeleteView):
+#   model = Ingredient
+#   template_name = 'recipe_app/ingredient_delete_form.html'
+#   success_url = reverse_lazy('ingredient_list')
 
 # class RecipeCategoryList(ListView):
 #   model = RecipeCategory

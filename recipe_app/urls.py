@@ -22,6 +22,7 @@ urlpatterns = [
     #path('test-error/', views.test_error_view, name='test_error'),
     path('recipe/<int:recipe_id>/like/', views.toggle_like, name='toggle_like'),
     path('recipe/<int:recipe_id>/favorite/', views.toggle_favorite, name='toggle_favorite'),
+    path('profile/', views.user_profile, name='user_profile'),
 
 ]
 

@@ -1,0 +1,57 @@
+{% extends './base.html' %}
+
+TODO SUBMITTED RECIPES, LIST OF COMMENTS, LIST OF FAVOURITES
+
+{% block content %}
+                    <h1>{{ request.user.username }}'s Profile</h1>
+
+<section>
+    <h2>Your Recipes</h2>
+    {% for recipe in user_recipes %}
+        <div>
+            <a href="{% url 'recipe_detail' recipe.id %}">{{ recipe.title }}</a>
+            <p>{{ recipe.description }}</p>
+        </div>
+    {% empty %}
+        <p>No recipes found.</p>
+    {% endfor %}
+</section>
+
+<section>
+    <h2>Liked Recipes</h2>
+    {% for recipe in liked_recipes %}
+        <div>
+            <a href="{% url 'recipe_detail' recipe.id %}">{{ recipe.title }}</a>
+            <p>{{ recipe.description }}</p>
+        </div>
+    {% empty %}
+        <p>No liked recipes found.</p>
+    {% endfor %}
+</section>
+
+<section>
+    <h2>Favorited Recipes</h2>
+    {% for recipe in favorited_recipes %}
+        <div>
+            <a href="{% url 'recipe_detail' recipe.id %}">{{ recipe.title }}</a>
+            <p>{{ recipe.description }}</p>
+        </div>
+    {% empty %}
+        <p>No favorited recipes found.</p>
+    {% endfor %}
+</section>
+
+<section>
+    <h2>Your Comments</h2>
+    {% for comment in user_comments %}
+        <div>
+            <p>On <a href="{% url 'recipe_detail' comment.recipe.id %}">{{ comment.recipe.title }}</a></p>
+            <p>{{ comment.text }}</p>
+            <p><small>{{ comment.created_at }}</small></p>
+        </div>
+    {% empty %}
+        <p>No comments found.</p>
+    {% endfor %}
+</section>
+
+{% endblock %}
