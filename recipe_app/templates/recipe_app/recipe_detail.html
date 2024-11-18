@@ -46,8 +46,6 @@
         <button type="submit">Unlike</button>
     {% else %}
         <button type="submit">Like</button>
-        {{ recipe.likes.all }}
-    {{ request.user }}
     {% endif %}
 </form>
 

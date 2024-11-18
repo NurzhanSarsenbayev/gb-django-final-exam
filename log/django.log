@@ -2537,3 +2537,69 @@ WARNING 2024-11-13 08:23:09,025 basehttp 22980 17924 "GET /media/recipe_images/c
 WARNING 2024-11-13 08:23:09,026 basehttp 22980 20916 "GET /media/recipe_images/jala.jpg HTTP/1.1" 404 1755
 WARNING 2024-11-13 08:23:09,026 basehttp 22980 15556 "GET /media/recipe_images/apple_jNWo8qJ.webp HTTP/1.1" 404 1755
 WARNING 2024-11-13 08:23:09,026 basehttp 22980 12156 "GET /static/styles.css HTTP/1.1" 404 1755
+INFO 2024-11-13 08:41:33,550 autoreload 25216 18556 Watching for file changes with StatReloader
+INFO 2024-11-13 08:41:36,727 basehttp 25216 4552 "GET / HTTP/1.1" 200 4395
+WARNING 2024-11-13 08:41:37,437 log 25216 4552 Not Found: /static/styles.css
+WARNING 2024-11-13 08:41:37,438 basehttp 25216 4552 "GET /static/styles.css HTTP/1.1" 404 1755
+WARNING 2024-11-13 08:41:37,534 log 25216 25340 Not Found: /media/recipe_images/salad.jpg
+WARNING 2024-11-13 08:41:37,535 basehttp 25216 25340 "GET /media/recipe_images/salad.jpg HTTP/1.1" 404 1755
+WARNING 2024-11-13 08:41:37,858 log 25216 4552 Not Found: /media/recipe_images/marga.webp
+WARNING 2024-11-13 08:41:37,858 basehttp 25216 4552 "GET /media/recipe_images/marga.webp HTTP/1.1" 404 1755
+WARNING 2024-11-13 08:41:37,968 log 25216 25340 Not Found: /media/recipe_images/cin.webp
+WARNING 2024-11-13 08:41:37,969 log 25216 19772 Not Found: /media/recipe_images/french1.jpg
+WARNING 2024-11-13 08:41:37,970 basehttp 25216 25340 "GET /media/recipe_images/cin.webp HTTP/1.1" 404 1755
+WARNING 2024-11-13 08:41:37,971 basehttp 25216 19772 "GET /media/recipe_images/french1.jpg HTTP/1.1" 404 1755
+INFO 2024-11-13 08:41:40,936 basehttp 25216 19772 "GET /logout/ HTTP/1.1" 302 0
+INFO 2024-11-13 08:41:40,943 basehttp 25216 19772 "GET / HTTP/1.1" 302 0
+INFO 2024-11-13 08:41:40,956 basehttp 25216 19772 "GET /login/?next=/ HTTP/1.1" 200 2086
+WARNING 2024-11-13 08:41:41,000 log 25216 19772 Not Found: /static/styles.css
+WARNING 2024-11-13 08:41:41,001 basehttp 25216 19772 "GET /static/styles.css HTTP/1.1" 404 1565
+INFO 2024-11-13 08:41:43,618 basehttp 25216 19772 "GET /signup/ HTTP/1.1" 200 2961
+WARNING 2024-11-13 08:41:43,672 log 25216 19772 Not Found: /static/styles.css
+WARNING 2024-11-13 08:41:43,672 basehttp 25216 19772 "GET /static/styles.css HTTP/1.1" 404 1565
+INFO 2024-11-13 08:43:52,565 basehttp 25216 19772 "GET /signup/ HTTP/1.1" 200 2925
+WARNING 2024-11-13 08:43:52,598 log 25216 19772 Not Found: /static/styles.css
+WARNING 2024-11-13 08:43:52,598 basehttp 25216 19772 "GET /static/styles.css HTTP/1.1" 404 1565
+INFO 2024-11-13 08:43:53,515 basehttp 25216 19772 "GET /signup/ HTTP/1.1" 200 2925
+WARNING 2024-11-13 08:43:53,555 log 25216 19772 Not Found: /static/styles.css
+WARNING 2024-11-13 08:43:53,556 basehttp 25216 19772 "GET /static/styles.css HTTP/1.1" 404 1565
+INFO 2024-11-13 08:43:55,887 basehttp 25216 19772 "GET /signup/ HTTP/1.1" 200 2925
+WARNING 2024-11-13 08:43:55,940 log 25216 19772 Not Found: /static/styles.css
+WARNING 2024-11-13 08:43:55,940 basehttp 25216 19772 "GET /static/styles.css HTTP/1.1" 404 1565
+INFO 2024-11-13 08:44:54,404 basehttp 25216 19772 "GET /signup/ HTTP/1.1" 200 2925
+WARNING 2024-11-13 08:44:54,447 log 25216 19772 Not Found: /static/styles.css
+WARNING 2024-11-13 08:44:54,447 basehttp 25216 19772 "GET /static/styles.css HTTP/1.1" 404 1565
+INFO 2024-11-13 08:44:55,131 basehttp 25216 19772 "GET /signup/ HTTP/1.1" 200 2925
+WARNING 2024-11-13 08:44:55,172 log 25216 19772 Not Found: /static/styles.css
+WARNING 2024-11-13 08:44:55,173 basehttp 25216 19772 "GET /static/styles.css HTTP/1.1" 404 1565
+INFO 2024-11-13 08:44:55,348 basehttp 25216 19772 "GET /signup/ HTTP/1.1" 200 2925
+WARNING 2024-11-13 08:44:55,392 log 25216 19772 Not Found: /static/styles.css
+WARNING 2024-11-13 08:44:55,393 basehttp 25216 19772 "GET /static/styles.css HTTP/1.1" 404 1565
+INFO 2024-11-13 08:45:16,575 basehttp 25216 19772 "GET /signup/ HTTP/1.1" 200 2890
+WARNING 2024-11-13 08:45:16,615 log 25216 19772 Not Found: /static/styles.css
+WARNING 2024-11-13 08:45:16,615 basehttp 25216 19772 "GET /static/styles.css HTTP/1.1" 404 1565
+INFO 2024-11-18 23:35:37,996 autoreload 7644 26164 Watching for file changes with StatReloader
+INFO 2024-11-18 23:35:54,257 basehttp 7644 12188 "GET / HTTP/1.1" 302 0
+INFO 2024-11-18 23:35:54,282 basehttp 7644 12188 "GET /login/?next=/ HTTP/1.1" 200 2086
+WARNING 2024-11-18 23:35:54,403 log 7644 12188 Not Found: /static/styles.css
+WARNING 2024-11-18 23:35:54,404 basehttp 7644 12188 "GET /static/styles.css HTTP/1.1" 404 1565
+WARNING 2024-11-18 23:35:54,451 log 7644 12188 Not Found: /favicon.ico
+WARNING 2024-11-18 23:35:54,452 basehttp 7644 12188 "GET /favicon.ico HTTP/1.1" 404 1565
+INFO 2024-11-18 23:35:56,417 basehttp 7644 12188 "POST /login/?next=/ HTTP/1.1" 302 0
+INFO 2024-11-18 23:35:56,465 basehttp 7644 12188 "GET / HTTP/1.1" 200 4246
+WARNING 2024-11-18 23:35:56,651 log 7644 23828 Not Found: /media/recipe_images/marga.webp
+WARNING 2024-11-18 23:35:56,654 log 7644 12188 Not Found: /static/styles.css
+WARNING 2024-11-18 23:35:56,655 log 7644 26004 Not Found: /media/recipe_images/cake.webp
+WARNING 2024-11-18 23:35:56,655 basehttp 7644 23828 "GET /media/recipe_images/marga.webp HTTP/1.1" 404 1755
+WARNING 2024-11-18 23:35:56,656 basehttp 7644 12188 "GET /static/styles.css HTTP/1.1" 404 1755
+WARNING 2024-11-18 23:35:56,656 basehttp 7644 26004 "GET /media/recipe_images/cake.webp HTTP/1.1" 404 1755
+WARNING 2024-11-18 23:35:56,657 log 7644 20156 Not Found: /media/recipe_images/apple_jNWo8qJ.webp
+WARNING 2024-11-18 23:35:56,658 log 7644 4248 Not Found: /media/recipe_images/jala.jpg
+WARNING 2024-11-18 23:35:56,659 basehttp 7644 20156 "GET /media/recipe_images/apple_jNWo8qJ.webp HTTP/1.1" 404 1755
+WARNING 2024-11-18 23:35:56,659 basehttp 7644 4248 "GET /media/recipe_images/jala.jpg HTTP/1.1" 404 1755
+INFO 2024-11-18 23:35:57,719 basehttp 7644 4248 "GET /recipes/9/ HTTP/1.1" 200 3899
+WARNING 2024-11-18 23:35:57,756 log 7644 4248 Not Found: /static/styles.css
+WARNING 2024-11-18 23:35:57,757 basehttp 7644 4248 "GET /static/styles.css HTTP/1.1" 404 1755
+INFO 2024-11-18 23:36:32,674 basehttp 7644 4248 "GET /recipes/9/ HTTP/1.1" 200 3857
+WARNING 2024-11-18 23:36:32,717 log 7644 4248 Not Found: /static/styles.css
+WARNING 2024-11-18 23:36:32,717 basehttp 7644 4248 "GET /static/styles.css HTTP/1.1" 404 1755
