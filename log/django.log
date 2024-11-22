@@ -2669,3 +2669,17 @@ WARNING 2024-11-22 12:35:33,541 log 31680 31644 Not Found: /static/styles.css
 WARNING 2024-11-22 12:35:33,541 log 31680 5296 Not Found: /media/recipe_images/cin.webp
 WARNING 2024-11-22 12:35:33,542 basehttp 31680 5296 "GET /media/recipe_images/cin.webp HTTP/1.1" 404 1810
 WARNING 2024-11-22 12:35:33,542 basehttp 31680 31644 "GET /static/styles.css HTTP/1.1" 404 1810
+INFO 2024-11-22 14:39:35,871 autoreload 20248 7732 Watching for file changes with StatReloader
+INFO 2024-11-22 14:39:37,916 basehttp 20248 18364 "GET / HTTP/1.1" 200 4712
+WARNING 2024-11-22 14:39:38,132 log 20248 18364 Not Found: /static/styles.css
+WARNING 2024-11-22 14:39:38,133 basehttp 20248 18364 "GET /static/styles.css HTTP/1.1" 404 1810
+WARNING 2024-11-22 14:39:38,140 log 20248 23244 Not Found: /media/recipe_images/marga.webp
+WARNING 2024-11-22 14:39:38,145 basehttp 20248 23244 "GET /media/recipe_images/marga.webp HTTP/1.1" 404 1810
+WARNING 2024-11-22 14:39:38,147 log 20248 18364 Not Found: /media/recipe_images/salad.jpg
+WARNING 2024-11-22 14:39:38,150 log 20248 24084 Not Found: /media/recipe_images/french1.jpg
+WARNING 2024-11-22 14:39:38,150 log 20248 12684 Not Found: /media/recipe_images/cake.webp
+WARNING 2024-11-22 14:39:38,151 basehttp 20248 18364 "GET /media/recipe_images/salad.jpg HTTP/1.1" 404 1810
+WARNING 2024-11-22 14:39:38,151 basehttp 20248 24084 "GET /media/recipe_images/french1.jpg HTTP/1.1" 404 1810
+WARNING 2024-11-22 14:39:38,151 basehttp 20248 12684 "GET /media/recipe_images/cake.webp HTTP/1.1" 404 1810
+WARNING 2024-11-22 14:39:38,602 log 20248 12684 Not Found: /favicon.ico
+WARNING 2024-11-22 14:39:38,602 basehttp 20248 12684 "GET /favicon.ico HTTP/1.1" 404 1810

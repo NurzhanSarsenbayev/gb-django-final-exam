@@ -11,7 +11,7 @@ TODO SUBMITTED RECIPES, LIST OF COMMENTS, LIST OF FAVOURITES
     {% for recipe in user_recipes %}
         <div>
             <a href="{% url 'recipe_detail' recipe.id %}">{{ recipe.title }}</a>
-            <p>{{ recipe.description }}</p>
+            <p></p>
         </div>
     {% empty %}
         <p>No recipes found.</p>
