@@ -10,8 +10,8 @@
                 {% if recipe.image %}
                 <img src="{{ recipe.image.url }}" alt="{{ recipe.title }}" style="width: 200px; height: 150px; object-fit: cover;" />
                 {% endif %}
-                <h2><a href="{% url 'recipe_detail' recipe.pk %}">{{ recipe.title }}</h2>
-                <p>{{ recipe.description|truncatewords:50 }}</p> <!-- Truncate to 50 words -->
+                <h2><a href="{% url 'recipe_detail' recipe.pk %}">{{ recipe.title }}</a></h2>
+                <p>{{ recipe.description|truncatewords:50 }}</p>
 
             </div>
         {% endfor %}
